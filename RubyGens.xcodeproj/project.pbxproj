@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46C744425C6A64339689C260 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5DB9D76F65760562C3A413 /* libPods.a */; };
 		8B1B6ED11B0BFB65004430C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED01B0BFB65004430C7 /* main.m */; };
+		8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED81B0C0411004430C7 /* RGApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C5DB9D76F65760562C3A413 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1B6ECD1B0BFB65004430C7 /* RubyGens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RubyGens; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1B6ED01B0BFB65004430C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B1B6ED71B0C0411004430C7 /* RGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGApplication.h; sourceTree = "<group>"; };
+		8B1B6ED81B0C0411004430C7 /* RGApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGApplication.m; sourceTree = "<group>"; };
+		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C744425C6A64339689C260 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F09F649D167D3F7B089167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DB9D76F65760562C3A413 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A3FFDFDE7BA119813F3BEFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */,
+				C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B1B6EC41B0BFB65004430C7 = {
 			isa = PBXGroup;
 			children = (
 				8B1B6ECF1B0BFB65004430C7 /* RubyGens */,
 				8B1B6ECE1B0BFB65004430C7 /* Products */,
+				7A3FFDFDE7BA119813F3BEFA /* Pods */,
+				06F09F649D167D3F7B089167 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				8B1B6ED01B0BFB65004430C7 /* main.m */,
+				8B1B6ED71B0C0411004430C7 /* RGApplication.h */,
+				8B1B6ED81B0C0411004430C7 /* RGApplication.m */,
 			);
 			path = RubyGens;
 			sourceTree = "<group>";
@@ -69,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B1B6ED41B0BFB65004430C7 /* Build configuration list for PBXNativeTarget "RubyGens" */;
 			buildPhases = (
+				98D0181F465E48DD97D777C8 /* Check Pods Manifest.lock */,
 				8B1B6EC91B0BFB65004430C7 /* Sources */,
 				8B1B6ECA1B0BFB65004430C7 /* Frameworks */,
 				8B1B6ECB1B0BFB65004430C7 /* CopyFiles */,
+				C5B6CB8A10C471FFDFE68D2E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -88,8 +119,9 @@
 		8B1B6EC51B0BFB65004430C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RG;
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = Sudeium;
+				ORGANIZATIONNAME = Chatspry;
 				TargetAttributes = {
 					8B1B6ECC1B0BFB65004430C7 = {
 						CreatedOnToolsVersion = 6.3;
@@ -97,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = 8B1B6EC81B0BFB65004430C7 /* Build configuration list for PBXProject "RubyGens" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,12 +145,46 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98D0181F465E48DD97D777C8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B6CB8A10C471FFDFE68D2E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B1B6EC91B0BFB65004430C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8B1B6ED11B0BFB65004430C7 /* main.m in Sources */,
+				8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +270,7 @@
 		};
 		8B1B6ED51B0BFB65004430C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -211,6 +278,7 @@
 		};
 		8B1B6ED61B0BFB65004430C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -235,6 +303,7 @@
 				8B1B6ED61B0BFB65004430C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
