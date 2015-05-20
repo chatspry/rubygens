@@ -17,6 +17,7 @@ in enterprise-scale production apps before, and if it does everything you need,
 you should keep using it.
 
 That said, this project aims to exceed Mogenerator in the following ways:
+
 1. It will not get bogged down by backwards compatibility concerns.
    * Mogenerator still targets Mac OS X 10.6, an operating system released more
      than 5 years ago.
