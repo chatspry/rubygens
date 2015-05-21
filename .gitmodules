@@ -3,4 +3,4 @@
 	url = https://github.com/tomaz/GBCli.git
 [submodule "External/mruby"]
 	path = External/mruby
-	url = https://github.com/mruby/mruby.git
+	url = https://github.com/chatspry/mruby.git
