@@ -4,3 +4,9 @@
 [submodule "External/mruby"]
 	path = External/mruby
 	url = https://github.com/chatspry/mruby.git
+[submodule "External/mruby-cfunc"]
+	path = External/mruby-cfunc
+	url = https://github.com/chatspry/mruby-cfunc.git
+[submodule "External/mruby-cocoa"]
+	path = External/mruby-cocoa
+	url = https://github.com/chatspry/mruby-cocoa.git
