@@ -12,16 +12,6 @@
 		8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED81B0C0411004430C7 /* RGApplication.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8B1B6F3F1B0DEBB9004430C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B1B6EEC1B0DE994004430C7 /* mruby.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B1B6EE51B0DE994004430C7;
-			remoteInfo = mruby;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		8B1B6ECB1B0BFB65004430C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -40,7 +30,6 @@
 		8B1B6ED01B0BFB65004430C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B1B6ED71B0C0411004430C7 /* RGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGApplication.h; sourceTree = "<group>"; };
 		8B1B6ED81B0C0411004430C7 /* RGApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGApplication.m; sourceTree = "<group>"; };
-		8B1B6EEC1B0DE994004430C7 /* mruby.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = mruby.xcodeproj; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				8B1B6ECF1B0BFB65004430C7 /* RubyGens */,
-				8B1B6EDA1B0DE90C004430C7 /* External */,
 				8B1B6ECE1B0BFB65004430C7 /* Products */,
 				7A3FFDFDE7BA119813F3BEFA /* Pods */,
 				06F09F649D167D3F7B089167 /* Frameworks */,
@@ -101,30 +89,6 @@
 				8B1B6ED81B0C0411004430C7 /* RGApplication.m */,
 			);
 			path = RubyGens;
-			sourceTree = "<group>";
-		};
-		8B1B6EDA1B0DE90C004430C7 /* External */ = {
-			isa = PBXGroup;
-			children = (
-				8B1B6EDB1B0DE931004430C7 /* mruby */,
-			);
-			path = External;
-			sourceTree = "<group>";
-		};
-		8B1B6EDB1B0DE931004430C7 /* mruby */ = {
-			isa = PBXGroup;
-			children = (
-				8B1B6EEC1B0DE994004430C7 /* mruby.xcodeproj */,
-			);
-			path = mruby;
-			sourceTree = "<group>";
-		};
-		8B1B6F3C1B0DEBB9004430C7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B1B6F401B0DEBB9004430C7 /* libmruby.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,28 +138,12 @@
 			mainGroup = 8B1B6EC41B0BFB65004430C7;
 			productRefGroup = 8B1B6ECE1B0BFB65004430C7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 8B1B6F3C1B0DEBB9004430C7 /* Products */;
-					ProjectRef = 8B1B6EEC1B0DE994004430C7 /* mruby.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8B1B6ECC1B0BFB65004430C7 /* RubyGens */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		8B1B6F401B0DEBB9004430C7 /* libmruby.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libmruby.a;
-			remoteRef = 8B1B6F3F1B0DEBB9004430C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		98D0181F465E48DD97D777C8 /* Check Pods Manifest.lock */ = {
