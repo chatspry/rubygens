@@ -41,3 +41,35 @@ That said, this project aims to exceed Mogenerator in the following ways:
 [mruby-merb]: https://github.com/pbosetti/mruby-merb
 [mruby]: https://github.com/mruby/mruby
 [MiscMergeKit]: https://www.google.com/search?q=MiscMergeKit
+
+Installing
+----------
+
+Install [Homebrew].
+
+```sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Install libFFI. Sorry, the one that ships with Xcode is too old.
+
+```sh
+brew install libffi
+```
+
+Clone repo with submodules.
+
+```sh
+git clone --recursive https://github.com/chatspry/rubygens.git
+```
+
+You can now compile the mruby library.
+
+```sh
+cd rubygens/External/mruby
+MRUBY_CONFIG=../../mruby_config.rb ./minirake
+```
+
+The app should now compile in Xcode.
+
+[Homebrew]: http://brew.sh/
