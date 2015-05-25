@@ -8,6 +8,8 @@
 
 #import "RGApplication.h"
 #import "GBCli.h"
+#import "mruby.h"
+#import "cocoa.h"
 
 @implementation RGApplication
 

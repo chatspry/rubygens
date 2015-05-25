@@ -10,6 +10,7 @@
 		46C744425C6A64339689C260 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5DB9D76F65760562C3A413 /* libPods.a */; };
 		8B1B6ED11B0BFB65004430C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED01B0BFB65004430C7 /* main.m */; };
 		8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED81B0C0411004430C7 /* RGApplication.m */; };
+		8B1B6F421B1344F8004430C7 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F411B1344F8004430C7 /* libmruby.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		8B1B6ED01B0BFB65004430C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B1B6ED71B0C0411004430C7 /* RGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGApplication.h; sourceTree = "<group>"; };
 		8B1B6ED81B0C0411004430C7 /* RGApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGApplication.m; sourceTree = "<group>"; };
+		8B1B6F411B1344F8004430C7 /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = External/mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C744425C6A64339689C260 /* libPods.a in Frameworks */,
+				8B1B6F421B1344F8004430C7 /* libmruby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,7 @@
 		06F09F649D167D3F7B089167 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B1B6F411B1344F8004430C7 /* libmruby.a */,
 				2C5DB9D76F65760562C3A413 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -272,6 +276,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GBCli\"",
+					"\"$(PROJECT_DIR)/External/mruby/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cfunc/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cocoa/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/mruby/build/host/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -280,6 +296,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GBCli\"",
+					"\"$(PROJECT_DIR)/External/mruby/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cfunc/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cocoa/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/mruby/build/host/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
