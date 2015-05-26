@@ -15,9 +15,12 @@ MRuby::Build.new do |conf|
   conf.gem :github => "pbosetti/mruby-merb", :checksum_hash => "3a7ae850a5986369612de282e5748c3528d23d9c"
   conf.gembox 'default'
 
+  enable_debug
+
   [conf.cc, conf.objc].each do |cc|
     cc.command = 'xcrun'
-    cc.flags = %W(-sdk macosx clang -isysroot #{SDK_ROOT} -O3 -Wall -Werror-implicit-function-declaration)
+    cc.defines = %w(ENABLE_DEBUG)
+    cc.flags = %W(-sdk macosx clang -isysroot #{SDK_ROOT} -O0 -g -Wall -Werror-implicit-function-declaration)
   end
 
   conf.linker do |l|
