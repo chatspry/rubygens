@@ -33,3 +33,9 @@ MRuby::Build.new do |conf|
     ar.archive_options = 'libtool -static -o %{outfile} %{objs}'
   end
 end
+
+# Aliases for Xcode
+task :build => :all
+task :install => :all
+task :installhdrs => :all
+task :installsrc => :all

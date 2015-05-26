@@ -16,6 +16,16 @@
 		8B1B6F581B147B61004430C7 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F571B147B61004430C7 /* libffi.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8B1B6F5D1B14869B004430C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1B6EC51B0BFB65004430C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1B6F591B148629004430C7;
+			remoteInfo = mruby;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		8B1B6ECB1B0BFB65004430C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -109,6 +119,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		8B1B6F591B148629004430C7 /* mruby */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 8B1B6F5A1B148629004430C7 /* Build configuration list for PBXLegacyTarget "mruby" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(PROJECT_DIR)/External/mruby/minirake";
+			buildWorkingDirectory = "$(PROJECT_DIR)/External/mruby";
+			dependencies = (
+			);
+			name = mruby;
+			passBuildSettingsInEnvironment = 1;
+			productName = mruby;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		8B1B6ECC1B0BFB65004430C7 /* RubyGens */ = {
 			isa = PBXNativeTarget;
@@ -123,6 +150,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8B1B6F5E1B14869B004430C7 /* PBXTargetDependency */,
 			);
 			name = RubyGens;
 			productName = RubyGens;
@@ -142,6 +170,9 @@
 					8B1B6ECC1B0BFB65004430C7 = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					8B1B6F591B148629004430C7 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 				};
 			};
 			buildConfigurationList = 8B1B6EC81B0BFB65004430C7 /* Build configuration list for PBXProject "RubyGens" */;
@@ -157,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				8B1B6ECC1B0BFB65004430C7 /* RubyGens */,
+				8B1B6F591B148629004430C7 /* mruby */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +237,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B1B6F5E1B14869B004430C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1B6F591B148629004430C7 /* mruby */;
+			targetProxy = 8B1B6F5D1B14869B004430C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8B1B6ED21B0BFB65004430C7 /* Debug */ = {
@@ -338,6 +378,33 @@
 			};
 			name = Release;
 		};
+		8B1B6F5B1B148629004430C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MRUBY_CONFIG = "$(PROJECT_DIR)/mruby_config.rb";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B1B6F5C1B148629004430C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MRUBY_CONFIG = "$(PROJECT_DIR)/mruby_config.rb";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +425,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8B1B6F5A1B148629004430C7 /* Build configuration list for PBXLegacyTarget "mruby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1B6F5B1B148629004430C7 /* Debug */,
+				8B1B6F5C1B148629004430C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
