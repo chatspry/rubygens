@@ -10,4 +10,6 @@
 
 @interface RGApplication : NSObject
 
+- (void) run;
+
 @end

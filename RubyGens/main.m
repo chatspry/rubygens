@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RGApplication.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        RGApplication *application = [RGApplication new];
+        [application run];
     }
     return 0;
 }

@@ -11,6 +11,9 @@
 		8B1B6ED11B0BFB65004430C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED01B0BFB65004430C7 /* main.m */; };
 		8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6ED81B0C0411004430C7 /* RGApplication.m */; };
 		8B1B6F421B1344F8004430C7 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F411B1344F8004430C7 /* libmruby.a */; };
+		8B1B6F441B146B3C004430C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F431B146B3C004430C7 /* Foundation.framework */; };
+		8B1B6F461B146B43004430C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F451B146B43004430C7 /* CoreData.framework */; };
+		8B1B6F581B147B61004430C7 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F571B147B61004430C7 /* libffi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,9 @@
 		8B1B6ED71B0C0411004430C7 /* RGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGApplication.h; sourceTree = "<group>"; };
 		8B1B6ED81B0C0411004430C7 /* RGApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGApplication.m; sourceTree = "<group>"; };
 		8B1B6F411B1344F8004430C7 /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = External/mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
+		8B1B6F431B146B3C004430C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B1B6F451B146B43004430C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8B1B6F571B147B61004430C7 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../../../../usr/local/Cellar/libffi/3.0.13/lib/libffi.a; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,8 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1B6F441B146B3C004430C7 /* Foundation.framework in Frameworks */,
+				8B1B6F461B146B43004430C7 /* CoreData.framework in Frameworks */,
 				46C744425C6A64339689C260 /* libPods.a in Frameworks */,
 				8B1B6F421B1344F8004430C7 /* libmruby.a in Frameworks */,
+				8B1B6F581B147B61004430C7 /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +61,11 @@
 		06F09F649D167D3F7B089167 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B1B6F451B146B43004430C7 /* CoreData.framework */,
+				8B1B6F431B146B3C004430C7 /* Foundation.framework */,
 				8B1B6F411B1344F8004430C7 /* libmruby.a */,
 				2C5DB9D76F65760562C3A413 /* libPods.a */,
+				8B1B6F571B147B61004430C7 /* libffi.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,6 +299,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/mruby/build/host/lib",
+					/usr/local/Cellar/libffi/3.0.13/lib,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-GBCli\"",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -307,6 +326,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/mruby/build/host/lib",
+					/usr/local/Cellar/libffi/3.0.13/lib,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-GBCli\"",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

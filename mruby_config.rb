@@ -24,4 +24,9 @@ MRuby::Build.new do |conf|
     l.command = 'xcrun'
     l.flags = %W(-sdk macosx clang -isysroot #{SDK_ROOT} -L#{FFI_DIR})
   end
+
+  conf.archiver do |ar|
+    ar.command = 'xcrun'
+    ar.archive_options = 'libtool -static -o %{outfile} %{objs}'
+  end
 end
