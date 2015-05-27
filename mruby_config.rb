@@ -13,6 +13,8 @@ MRuby::Build.new do |conf|
     g.objc.include_paths << FFI_INCLUDE_DIR
   end
   conf.gem :github => "pbosetti/mruby-merb", :checksum_hash => "3a7ae850a5986369612de282e5748c3528d23d9c"
+  conf.gem :github => "iij/mruby-regexp-pcre"
+  conf.gem :core => "mruby-eval"
   conf.gembox 'default'
 
   enable_debug

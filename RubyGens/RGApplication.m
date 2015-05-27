@@ -9,6 +9,8 @@
 #import "RGApplication.h"
 #import "GBCli.h"
 #import "mruby.h"
+#import "mruby/compile.h"
+#import "mruby/string.h"
 #import "cocoa.h"
 
 @interface RGApplication ()
@@ -32,7 +34,13 @@
 
 - (void) run
 {
-    
+    char code[] = "merb = MERB.new \"This is just a test <%= 1 + 2 %>\"\nresult = merb.analyze\nputs result\n";
+    mrb_value val = mrb_load_string(self.mrb, code);
+    if (self.mrb->exc) {
+        mrb_value obj = mrb_funcall(self.mrb, mrb_obj_value(self.mrb->exc), "inspect", 0);
+        fwrite(RSTRING_PTR(obj), RSTRING_LEN(obj), 1, stdout);
+        putc('\n', stdout);
+    }
 }
 
 - (void) dealloc
