@@ -63,13 +63,12 @@ Clone repo with submodules.
 git clone --recursive https://github.com/chatspry/rubygens.git
 ```
 
-You can now compile the mruby library.
+The app should now compile in Xcode. Use the workspace, not the xcodeproj, since
+this project uses CocoaPods.
 
 ```sh
-cd rubygens/External/mruby
-MRUBY_CONFIG=../../mruby_config.rb ./minirake
+cd rubygens
+open RubyGens.xcworkspace
 ```
-
-The app should now compile in Xcode.
 
 [Homebrew]: http://brew.sh/
