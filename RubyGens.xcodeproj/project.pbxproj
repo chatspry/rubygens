@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		2C5DB9D76F65760562C3A413 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B1B6ECD1B0BFB65004430C7 /* RubyGens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RubyGens; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1B6ECD1B0BFB65004430C7 /* rubygens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rubygens; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1B6ED01B0BFB65004430C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B1B6ED71B0C0411004430C7 /* RGApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGApplication.h; sourceTree = "<group>"; };
 		8B1B6ED81B0C0411004430C7 /* RGApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGApplication.m; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		8B1B6ECE1B0BFB65004430C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B1B6ECD1B0BFB65004430C7 /* RubyGens */,
+				8B1B6ECD1B0BFB65004430C7 /* rubygens */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			);
 			name = RubyGens;
 			productName = RubyGens;
-			productReference = 8B1B6ECD1B0BFB65004430C7 /* RubyGens */;
+			productReference = 8B1B6ECD1B0BFB65004430C7 /* rubygens */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -347,7 +347,8 @@
 					"-l\"Pods-GBCli\"",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = rubygens;
 			};
 			name = Debug;
 		};
@@ -374,7 +375,8 @@
 					"-l\"Pods-GBCli\"",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = rubygens;
 			};
 			name = Release;
 		};

@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RGApplication : NSObject
+@class GBSettings;
 
-- (void) run;
+@interface RGApplication : NSObject
+@property (nonatomic, readonly, strong) GBSettings *settings;
+
+- (void) runWithSettings: (GBSettings*) settings;
 
 @end

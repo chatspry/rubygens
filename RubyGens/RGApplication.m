@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Chatspry. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
 #import "RGApplication.h"
 #import "GBCli.h"
 #import "mruby.h"
@@ -18,6 +19,8 @@
 @property (nonatomic, assign) struct BridgeSupportStructTable *struct_table;
 @property (nonatomic, assign) struct BridgeSupportConstTable *const_table;
 @property (nonatomic, assign) struct BridgeSupportEnumTable *enum_table;
+@property (nonatomic, strong) NSManagedObjectModel *model;
+@property (nonatomic, readwrite, strong) GBSettings *settings;
 @end
 
 @implementation RGApplication
@@ -32,8 +35,10 @@
     return self;
 }
 
-- (void) run
+- (void) runWithSettings:(GBSettings *)settings
 {
+    self.settings = settings;
+    
     char code[] = "merb = MERB.new \"This is just a test <%= 1 + 2 %>\"\nresult = merb.analyze\nputs result\n";
     mrb_value val = mrb_load_string(self.mrb, code);
     if (self.mrb->exc) {
