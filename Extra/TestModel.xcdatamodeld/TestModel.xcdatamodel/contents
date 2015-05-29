@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Base" representedClassName="Base" syncable="YES">
+        <attribute name="thingadoober" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Thingy" representedClassName="Thingy" parentEntity="Base" syncable="YES">
+        <attribute name="thingamabob" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Base" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Thingy" positionX="-54" positionY="-9" width="128" height="60"/>
+    </elements>
+</model>

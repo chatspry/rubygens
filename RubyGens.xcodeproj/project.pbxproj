@@ -14,6 +14,7 @@
 		8B1B6F441B146B3C004430C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F431B146B3C004430C7 /* Foundation.framework */; };
 		8B1B6F461B146B43004430C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F451B146B43004430C7 /* CoreData.framework */; };
 		8B1B6F581B147B61004430C7 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F571B147B61004430C7 /* libffi.a */; };
+		8B1B6F641B1869E1004430C7 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6F621B186764004430C7 /* TestModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		8B1B6F431B146B3C004430C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B1B6F451B146B43004430C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8B1B6F571B147B61004430C7 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../../../../usr/local/Cellar/libffi/3.0.13/lib/libffi.a; sourceTree = "<group>"; };
+		8B1B6F611B186317004430C7 /* Test.swift.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.swift.erb; sourceTree = "<group>"; };
+		8B1B6F631B186764004430C7 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1B6ECF1B0BFB65004430C7 /* RubyGens */,
+				8B1B6F601B186300004430C7 /* Extra */,
 				8B1B6ECE1B0BFB65004430C7 /* Products */,
 				7A3FFDFDE7BA119813F3BEFA /* Pods */,
 				06F09F649D167D3F7B089167 /* Frameworks */,
@@ -115,6 +119,15 @@
 				8B1B6ED81B0C0411004430C7 /* RGApplication.m */,
 			);
 			path = RubyGens;
+			sourceTree = "<group>";
+		};
+		8B1B6F601B186300004430C7 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				8B1B6F611B186317004430C7 /* Test.swift.erb */,
+				8B1B6F621B186764004430C7 /* TestModel.xcdatamodeld */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1B6F641B1869E1004430C7 /* TestModel.xcdatamodeld in Sources */,
 				8B1B6ED11B0BFB65004430C7 /* main.m in Sources */,
 				8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */,
 			);
@@ -437,6 +451,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B1B6F621B186764004430C7 /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B1B6F631B186764004430C7 /* TestModel.xcdatamodel */,
+			);
+			currentVersion = 8B1B6F631B186764004430C7 /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B1B6EC51B0BFB65004430C7 /* Project object */;
 }

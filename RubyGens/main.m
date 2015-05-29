@@ -23,6 +23,7 @@ int main(int argc, char * argv[]) {
         [options registerOption: 'g' long: @"output-dir-generated" description: @"Path for the generated machine files, files output to the human dir if this is not provided" flags: GBOptionRequiredValue];
         [options registerOption: 'o' long: @"output-dir" description: @"Path for the generated human files, defaults to current dir" flags: GBOptionRequiredValue];
         [options registerOption: '?' long: @"help" description: @"Prints out this help" flags: GBOptionNoValue|GBOptionInvisible];
+        [options registerOption: 'v' long: @"version" description: @"Prints out this help" flags: GBOptionNoValue|GBOptionInvisible];
         [options registerOption: 0 long: @"input-paths" description: @"Template input files" flags: GBOptionRequiredValue|GBOptionNoCmdLine|GBOptionInvisible];
         
         GBSettings *factoryDefaults = [GBSettings settingsWithName: @"Defaults" parent: nil];
@@ -38,6 +39,8 @@ int main(int argc, char * argv[]) {
             [options printHelp];
             return EXIT_SUCCESS;
         }
+        
+        [options printValuesFromSettings: providedSettings];
         
         RGApplication *application = [RGApplication new];
         [application runWithSettings: providedSettings];

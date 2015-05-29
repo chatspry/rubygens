@@ -39,13 +39,25 @@
 {
     self.settings = settings;
     
-    char code[] = "merb = MERB.new \"This is just a test <%= 1 + 2 %>\"\nresult = merb.analyze\nputs result\n";
-    mrb_value val = mrb_load_string(self.mrb, code);
+    NSString *modelPath = [self.settings objectForKey: @"model"];
+    if (modelPath) {
+        NSString *rubyCode = [NSString stringWithFormat: @"$model = Cocoa::NSManagedObjectModel._alloc._initWithContentsOfURL(Cocoa::NSURL._fileURLWithPath(\"%@\"))", modelPath];
+        [self executeRubyCode: rubyCode];
+        if (self.mrb->exc) {
+            return;
+        }
+    }
+}
+
+- (mrb_value) executeRubyCode: (NSString*) code
+{
+    mrb_value val = mrb_load_string(self.mrb, code.UTF8String);
     if (self.mrb->exc) {
         mrb_value obj = mrb_funcall(self.mrb, mrb_obj_value(self.mrb->exc), "inspect", 0);
         fwrite(RSTRING_PTR(obj), RSTRING_LEN(obj), 1, stdout);
         putc('\n', stdout);
     }
+    return val;
 }
 
 - (void) dealloc
