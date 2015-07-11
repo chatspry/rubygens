@@ -15,6 +15,8 @@
 		8B1B6F461B146B43004430C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F451B146B43004430C7 /* CoreData.framework */; };
 		8B1B6F581B147B61004430C7 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F571B147B61004430C7 /* libffi.a */; };
 		8B1B6F641B1869E1004430C7 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6F621B186764004430C7 /* TestModel.xcdatamodeld */; };
+		8BD1E5611B51336C0050FE3B /* RGRubyObjectGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5601B51336C0050FE3B /* RGRubyObjectGenerator.m */; };
+		8BD1E5641B5133870050FE3B /* RGMRubyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5631B5133870050FE3B /* RGMRubyContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		8B1B6F571B147B61004430C7 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../../../../usr/local/Cellar/libffi/3.0.13/lib/libffi.a; sourceTree = "<group>"; };
 		8B1B6F611B186317004430C7 /* Test.swift.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.swift.erb; sourceTree = "<group>"; };
 		8B1B6F631B186764004430C7 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
+		8BD1E55F1B51336C0050FE3B /* RGRubyObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGRubyObjectGenerator.h; sourceTree = "<group>"; };
+		8BD1E5601B51336C0050FE3B /* RGRubyObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGRubyObjectGenerator.m; sourceTree = "<group>"; };
+		8BD1E5621B5133870050FE3B /* RGMRubyContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMRubyContext.h; sourceTree = "<group>"; };
+		8BD1E5631B5133870050FE3B /* RGMRubyContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMRubyContext.m; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +123,10 @@
 				8B1B6ED01B0BFB65004430C7 /* main.m */,
 				8B1B6ED71B0C0411004430C7 /* RGApplication.h */,
 				8B1B6ED81B0C0411004430C7 /* RGApplication.m */,
+				8BD1E55F1B51336C0050FE3B /* RGRubyObjectGenerator.h */,
+				8BD1E5601B51336C0050FE3B /* RGRubyObjectGenerator.m */,
+				8BD1E5621B5133870050FE3B /* RGMRubyContext.h */,
+				8BD1E5631B5133870050FE3B /* RGMRubyContext.m */,
 			);
 			path = RubyGens;
 			sourceTree = "<group>";
@@ -244,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD1E5641B5133870050FE3B /* RGMRubyContext.m in Sources */,
 				8B1B6F641B1869E1004430C7 /* TestModel.xcdatamodeld in Sources */,
 				8B1B6ED11B0BFB65004430C7 /* main.m in Sources */,
 				8B1B6ED91B0C0411004430C7 /* RGApplication.m in Sources */,
+				8BD1E5611B51336C0050FE3B /* RGRubyObjectGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
