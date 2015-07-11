@@ -1,6 +1,6 @@
 @import Foundation
 
-<% $model._entities.each do |entity| %>
+<% $model._entities.to_a.each do |entity| %>
 public class <%=entity._managedObjectClassName%>: <%= if entity._superentity then entity._superentity else "NSObject" end%> {
 
 }

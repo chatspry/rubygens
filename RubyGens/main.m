@@ -40,6 +40,12 @@ int main(int argc, char * argv[]) {
             return EXIT_SUCCESS;
         }
         
+        if ([providedSettings arguments].count == 0) {
+            fprintf(stderr, "error: no input files\n");
+            [options printHelp];
+            return EXIT_FAILURE;
+        }
+        
         [options printValuesFromSettings: providedSettings];
         
         RGApplication *application = [RGApplication new];

@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "709B8A8C693783EAF18B206E49480316F6510C1D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4C81E697E801E622E5E8D7DB87EABC7043B2EA15" : 0,
+    "709B8A8C693783EAF18B206E49480316F6510C1D" : 0,
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CCCDD389-179D-4503-AC64-0D9DEB946B69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4C81E697E801E622E5E8D7DB87EABC7043B2EA15" : "RubyGensExternal\/GBCli",
+    "709B8A8C693783EAF18B206E49480316F6510C1D" : "RubyGens",
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : "RubyGensExternal\/mruby"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RubyGens",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RubyGens.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tomaz\/GBCli.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C81E697E801E622E5E8D7DB87EABC7043B2EA15"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:chatspry\/rubygens.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "709B8A8C693783EAF18B206E49480316F6510C1D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chatspry\/mruby.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE"
+    }
+  ]
+}

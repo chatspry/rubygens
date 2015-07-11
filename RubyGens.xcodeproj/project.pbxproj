@@ -449,6 +449,7 @@
 				8B1B6F5C1B148629004430C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
