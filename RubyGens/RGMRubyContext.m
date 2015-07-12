@@ -6,6 +6,10 @@
 //  Copyright © 2015 Chatspry. All rights reserved.
 //
 
+// We're keeping this file Objective-C, because that "C" part
+// in "Objective-C" means it'll _always_ be better at interfacing
+// with C than Swift will.
+
 #import "RGMRubyContext.h"
 #import "mruby.h"
 #import "mruby/compile.h"
