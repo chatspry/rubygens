@@ -1,5 +1,5 @@
 //
-//  RubyGensTests.swift
+//  ObjectSnapshotSpec.swift
 //  RubyGensTests
 //
 //  Created by Tyrone Trevorrow on 13/07/2015.
