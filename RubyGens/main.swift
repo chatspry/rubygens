@@ -8,51 +8,5 @@
 
 import Foundation
 
-extension String {
-    var ASCIIChar: CChar? {
-        return self.cStringUsingEncoding(NSASCIIStringEncoding)?[0]
-    }
-}
-
-let options = GBOptionsHelper()
-options.applicationName = {
-    return NSProcessInfo.processInfo().processName
-}
-options.applicationVersion = {
-    return "1.0.0"
-}
-options.printHelpHeader = {
-    return "%APPNAME %APPVERSION\n\nUSAGE: %APPNAME [options] <template input files>\n       %APPNAME --help"
-}
-let m: Character = "m"
-
-options.registerSeparator("OPTIONS:")
-options.registerOption("m".ASCIIChar!, long: "model", description: "Path to the xcdatamodeld", flags: [.RequiredValue])
-options.registerOption("g".ASCIIChar!, long: "output-dir-generated", description: "Path for the generated machine files, files output to the human dir if this is not provided", flags: [.RequiredValue])
-options.registerOption("o".ASCIIChar!, long: "output-dir", description: "Path for the generated human files, defaults to current dir", flags: [.RequiredValue])
-options.registerOption("?".ASCIIChar!, long: "help", description: "Prints out this help", flags: [.NoValue, .Invisible])
-options.registerOption("v".ASCIIChar!, long: "version", description: "Prints out this help", flags: [.NoValue, .Invisible])
-options.registerOption(0, long: "input-paths", description: "Template input files", flags: [.RequiredValue, .NoCmdLine, .Invisible])
-
-let factoryDefaults = GBSettings(name: "Defaults", parent: nil)
-let providedSettings = GBSettings(name: "Provided", parent: factoryDefaults)
-let parser = GBCommandLineParser()
-parser.registerOptions(options)
-parser.registerSettings(providedSettings)
-parser.parseOptionsWithArguments(Process.unsafeArgv, count: Process.argc)
-
-if providedSettings.boolForKey("help") || Process.arguments.count <= 1 {
-    options.printHelp()
-    exit(EXIT_SUCCESS)
-}
-
-if providedSettings.arguments.count == 0 {
-    print("error: no input files", target: stdErr)
-    exit(EXIT_FAILURE)
-}
-
-// For debugging
-options.printValuesFromSettings(providedSettings)
-
 let app = RubyGens()
-app.run(providedSettings)
+app.run()
