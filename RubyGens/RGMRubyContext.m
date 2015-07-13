@@ -15,6 +15,7 @@
 #import "mruby/compile.h"
 #import "mruby/string.h"
 #import "cocoa.h"
+#import <objc/runtime.h>
 
 @interface RGMRubyValue ()
 @property (nonatomic, strong) RGMRubyContext *context;
@@ -27,6 +28,9 @@
     struct BridgeSupportConstTable *_const_table;
     struct BridgeSupportEnumTable *_enum_table;
 }
+
+- (BOOL) logRubyException;
+
 @end
 
 @implementation RGMRubyValue {
@@ -90,6 +94,7 @@
     mrb_value return_value = mrb_funcall_argv(self.context->_mrb, _val, mrb_intern_cstr(self.context->_mrb, method.UTF8String), (mrb_int) args.count, vals);
     free(vals);
     vals = NULL;
+    [self.context logRubyException];
     
     return [RGMRubyValue value: return_value context: self.context];
 }
@@ -195,6 +200,7 @@
 {
     if (self.exception) {
         fprintf(stderr, "%s\n", self.exception.debugDescription.UTF8String);
+        mrb_print_backtrace(_mrb);
     }
     return NO;
 }

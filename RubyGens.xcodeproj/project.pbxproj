@@ -14,9 +14,9 @@
 		8B1B6F581B147B61004430C7 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F571B147B61004430C7 /* libffi.a */; };
 		8B1B6F641B1869E1004430C7 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B6F621B186764004430C7 /* TestModel.xcdatamodeld */; };
 		8BD1E5641B5133870050FE3B /* RGMRubyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5631B5133870050FE3B /* RGMRubyContext.m */; };
-		8BD1E5671B529C3A0050FE3B /* RubyObjectGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5661B529C3A0050FE3B /* RubyObjectGenerator.swift */; };
 		8BD1E5691B529CD10050FE3B /* RubyGens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5681B529CD10050FE3B /* RubyGens.swift */; };
 		8BD1E56B1B52A7C40050FE3B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E56A1B52A7C40050FE3B /* main.swift */; };
+		8BD1E56F1B539DAC0050FE3B /* ObjectSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E56E1B539DAC0050FE3B /* ObjectSnapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		8BD1E5621B5133870050FE3B /* RGMRubyContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMRubyContext.h; sourceTree = "<group>"; };
 		8BD1E5631B5133870050FE3B /* RGMRubyContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMRubyContext.m; sourceTree = "<group>"; };
 		8BD1E5651B529C3A0050FE3B /* RubyGens-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubyGens-Bridging-Header.h"; sourceTree = "<group>"; };
-		8BD1E5661B529C3A0050FE3B /* RubyObjectGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubyObjectGenerator.swift; sourceTree = "<group>"; };
 		8BD1E5681B529CD10050FE3B /* RubyGens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubyGens.swift; sourceTree = "<group>"; };
 		8BD1E56A1B52A7C40050FE3B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8BD1E56E1B539DAC0050FE3B /* ObjectSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectSnapshot.swift; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,9 +121,9 @@
 			children = (
 				8BD1E56A1B52A7C40050FE3B /* main.swift */,
 				8BD1E5681B529CD10050FE3B /* RubyGens.swift */,
-				8BD1E5661B529C3A0050FE3B /* RubyObjectGenerator.swift */,
 				8BD1E5621B5133870050FE3B /* RGMRubyContext.h */,
 				8BD1E5631B5133870050FE3B /* RGMRubyContext.m */,
+				8BD1E56E1B539DAC0050FE3B /* ObjectSnapshot.swift */,
 				8BD1E5651B529C3A0050FE3B /* RubyGens-Bridging-Header.h */,
 			);
 			path = RubyGens;
@@ -253,11 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD1E56F1B539DAC0050FE3B /* ObjectSnapshot.swift in Sources */,
 				8BD1E5691B529CD10050FE3B /* RubyGens.swift in Sources */,
 				8BD1E5641B5133870050FE3B /* RGMRubyContext.m in Sources */,
 				8BD1E56B1B52A7C40050FE3B /* main.swift in Sources */,
 				8B1B6F641B1869E1004430C7 /* TestModel.xcdatamodeld in Sources */,
-				8BD1E5671B529C3A0050FE3B /* RubyObjectGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
