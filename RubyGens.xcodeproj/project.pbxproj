@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C01EEF42FD95D171707524F /* Pods_RubyGensTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB256E308B9802E9BC4D34C /* Pods_RubyGensTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		46C744425C6A64339689C260 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5DB9D76F65760562C3A413 /* libPods.a */; };
 		8B1B6F421B1344F8004430C7 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F411B1344F8004430C7 /* libmruby.a */; };
 		8B1B6F441B146B3C004430C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F431B146B3C004430C7 /* Foundation.framework */; };
@@ -17,10 +18,22 @@
 		8BD1E5691B529CD10050FE3B /* RubyGens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5681B529CD10050FE3B /* RubyGens.swift */; };
 		8BD1E56B1B52A7C40050FE3B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E56A1B52A7C40050FE3B /* main.swift */; };
 		8BD1E56F1B539DAC0050FE3B /* ObjectSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E56E1B539DAC0050FE3B /* ObjectSnapshot.swift */; };
+		8BD1E5771B53D3DB0050FE3B /* RubyGensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5761B53D3DB0050FE3B /* RubyGensTests.swift */; };
+		8BD1E57C1B53D4230050FE3B /* ObjectSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E56E1B539DAC0050FE3B /* ObjectSnapshot.swift */; };
+		8BD1E57D1B53D4250050FE3B /* RGMRubyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1E5631B5133870050FE3B /* RGMRubyContext.m */; };
+		8BD1E5821B53D64A0050FE3B /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F571B147B61004430C7 /* libffi.a */; };
+		8BD1E5831B53D64E0050FE3B /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1B6F411B1344F8004430C7 /* libmruby.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8B1B6F5D1B14869B004430C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1B6EC51B0BFB65004430C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1B6F591B148629004430C7;
+			remoteInfo = mruby;
+		};
+		8BD1E5801B53D6240050FE3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B1B6EC51B0BFB65004430C7 /* Project object */;
 			proxyType = 1;
@@ -42,7 +55,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BB256E308B9802E9BC4D34C /* Pods_RubyGensTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubyGensTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5DB9D76F65760562C3A413 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		823AD208A939F803F0DCC837 /* Pods-RubyGensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyGensTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RubyGensTests/Pods-RubyGensTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B1B6ECD1B0BFB65004430C7 /* rubygens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rubygens; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1B6F411B1344F8004430C7 /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = External/mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
 		8B1B6F431B146B3C004430C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,8 +71,13 @@
 		8BD1E5681B529CD10050FE3B /* RubyGens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubyGens.swift; sourceTree = "<group>"; };
 		8BD1E56A1B52A7C40050FE3B /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8BD1E56E1B539DAC0050FE3B /* ObjectSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectSnapshot.swift; sourceTree = "<group>"; };
+		8BD1E5741B53D3DB0050FE3B /* RubyGensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubyGensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD1E5761B53D3DB0050FE3B /* RubyGensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyGensTests.swift; sourceTree = "<group>"; };
+		8BD1E5781B53D3DB0050FE3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD1E57F1B53D5B10050FE3B /* RubyGensTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubyGensTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE670C67C0A00B98350402C8 /* Pods-RubyGensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyGensTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RubyGensTests/Pods-RubyGensTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BD1E5711B53D3DB0050FE3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C01EEF42FD95D171707524F /* Pods_RubyGensTests.framework in Frameworks */,
+				8BD1E5831B53D64E0050FE3B /* libmruby.a in Frameworks */,
+				8BD1E5821B53D64A0050FE3B /* libffi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +114,7 @@
 				8B1B6F411B1344F8004430C7 /* libmruby.a */,
 				2C5DB9D76F65760562C3A413 /* libPods.a */,
 				8B1B6F571B147B61004430C7 /* libffi.a */,
+				1BB256E308B9802E9BC4D34C /* Pods_RubyGensTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +124,8 @@
 			children = (
 				96C739ADA5D2B85536486D6D /* Pods.debug.xcconfig */,
 				C1C0F0533C27F30180D29D6E /* Pods.release.xcconfig */,
+				823AD208A939F803F0DCC837 /* Pods-RubyGensTests.debug.xcconfig */,
+				CE670C67C0A00B98350402C8 /* Pods-RubyGensTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,6 +135,7 @@
 			children = (
 				8B1B6ECF1B0BFB65004430C7 /* RubyGens */,
 				8B1B6F601B186300004430C7 /* Extra */,
+				8BD1E5751B53D3DB0050FE3B /* RubyGensTests */,
 				8B1B6ECE1B0BFB65004430C7 /* Products */,
 				7A3FFDFDE7BA119813F3BEFA /* Pods */,
 				06F09F649D167D3F7B089167 /* Frameworks */,
@@ -112,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1B6ECD1B0BFB65004430C7 /* rubygens */,
+				8BD1E5741B53D3DB0050FE3B /* RubyGensTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +171,16 @@
 				8B1B6F621B186764004430C7 /* TestModel.xcdatamodeld */,
 			);
 			path = Extra;
+			sourceTree = "<group>";
+		};
+		8BD1E5751B53D3DB0050FE3B /* RubyGensTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BD1E5761B53D3DB0050FE3B /* RubyGensTests.swift */,
+				8BD1E5781B53D3DB0050FE3B /* Info.plist */,
+				8BD1E57F1B53D5B10050FE3B /* RubyGensTests-Bridging-Header.h */,
+			);
+			path = RubyGensTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +223,27 @@
 			productReference = 8B1B6ECD1B0BFB65004430C7 /* rubygens */;
 			productType = "com.apple.product-type.tool";
 		};
+		8BD1E5731B53D3DB0050FE3B /* RubyGensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD1E5791B53D3DB0050FE3B /* Build configuration list for PBXNativeTarget "RubyGensTests" */;
+			buildPhases = (
+				D74282B7376F964B3C68F1B4 /* Check Pods Manifest.lock */,
+				8BD1E5701B53D3DB0050FE3B /* Sources */,
+				8BD1E5711B53D3DB0050FE3B /* Frameworks */,
+				8BD1E5721B53D3DB0050FE3B /* Resources */,
+				3916EA699B1707596EAB05D2 /* Embed Pods Frameworks */,
+				B885466DA526C72DC06A7E5C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BD1E5811B53D6240050FE3B /* PBXTargetDependency */,
+			);
+			name = RubyGensTests;
+			productName = RubyGensTests;
+			productReference = 8BD1E5741B53D3DB0050FE3B /* RubyGensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +261,9 @@
 					8B1B6F591B148629004430C7 = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					8BD1E5731B53D3DB0050FE3B = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = 8B1B6EC81B0BFB65004430C7 /* Build configuration list for PBXProject "RubyGens" */;
@@ -211,11 +280,37 @@
 			targets = (
 				8B1B6ECC1B0BFB65004430C7 /* RubyGens */,
 				8B1B6F591B148629004430C7 /* mruby */,
+				8BD1E5731B53D3DB0050FE3B /* RubyGensTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8BD1E5721B53D3DB0050FE3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
+		3916EA699B1707596EAB05D2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RubyGensTests/Pods-RubyGensTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		98D0181F465E48DD97D777C8 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +324,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B885466DA526C72DC06A7E5C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RubyGensTests/Pods-RubyGensTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5B6CB8A10C471FFDFE68D2E /* Copy Pods Resources */ = {
@@ -246,6 +356,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D74282B7376F964B3C68F1B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +386,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BD1E5701B53D3DB0050FE3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD1E57D1B53D4250050FE3B /* RGMRubyContext.m in Sources */,
+				8BD1E57C1B53D4230050FE3B /* ObjectSnapshot.swift in Sources */,
+				8BD1E5771B53D3DB0050FE3B /* RubyGensTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -268,6 +403,11 @@
 			isa = PBXTargetDependency;
 			target = 8B1B6F591B148629004430C7 /* mruby */;
 			targetProxy = 8B1B6F5D1B14869B004430C7 /* PBXContainerItemProxy */;
+		};
+		8BD1E5811B53D6240050FE3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1B6F591B148629004430C7 /* mruby */;
+			targetProxy = 8BD1E5801B53D6240050FE3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,6 +579,56 @@
 			};
 			name = Release;
 		};
+		8BD1E57A1B53D3DB0050FE3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823AD208A939F803F0DCC837 /* Pods-RubyGensTests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/External/mruby/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cfunc/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cocoa/include\"",
+				);
+				INFOPLIST_FILE = RubyGensTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/mruby/build/host/lib",
+					/usr/local/Cellar/libffi/3.0.13/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chatspry.rubygens.RubyGensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RubyGensTests/RubyGensTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BD1E57B1B53D3DB0050FE3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE670C67C0A00B98350402C8 /* Pods-RubyGensTests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/External/mruby/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cfunc/include\"",
+					"\"$(PROJECT_DIR)/External/mruby-cocoa/include\"",
+				);
+				INFOPLIST_FILE = RubyGensTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/mruby/build/host/lib",
+					/usr/local/Cellar/libffi/3.0.13/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chatspry.rubygens.RubyGensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RubyGensTests/RubyGensTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,6 +655,15 @@
 			buildConfigurations = (
 				8B1B6F5B1B148629004430C7 /* Debug */,
 				8B1B6F5C1B148629004430C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD1E5791B53D3DB0050FE3B /* Build configuration list for PBXNativeTarget "RubyGensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD1E57A1B53D3DB0050FE3B /* Debug */,
+				8BD1E57B1B53D3DB0050FE3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

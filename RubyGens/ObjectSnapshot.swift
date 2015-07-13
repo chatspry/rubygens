@@ -9,7 +9,7 @@
 import Foundation
 
 @objc protocol RubyCompatibleSnapshottable : NSObjectProtocol {
-    var rubyCompatibleKeyValueCodingKeys: [String] { get }
+
 }
 
 extension RubyCompatibleSnapshottable {

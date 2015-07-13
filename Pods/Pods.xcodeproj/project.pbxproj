@@ -7,233 +7,636 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03E02CB17A698703D0FE34A9 /* GBPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 126BAEB0B3AAC0B6F263EA80 /* GBPrint.m */; };
-		0EE48FDB25653D61641FEABD /* GBCommandLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5BD9B2A65249D7BA6A59C9 /* GBCommandLineParser.m */; };
-		51B02A979A090AB108F44AAF /* Pods-GBCli-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC0AEDA5799A6B490DB17D /* Pods-GBCli-dummy.m */; };
-		55817087862F7F281182974F /* GBPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE3830CA3ACBDAB7DEDDF88 /* GBPrint.h */; };
-		6B27FD85569AFC572B1A7440 /* GBSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E0C779B7150698C0DA6E9B9 /* GBSettings.h */; };
-		6CD22EF2C249509D7B84E3E3 /* GBOptionsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 65106C93AF117261BA6308F9 /* GBOptionsHelper.h */; };
-		7F71B11F607C0EF473D2F92C /* GBCommandLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC826B39C9A2C53CAB24C99 /* GBCommandLineParser.h */; };
-		91A6F129283C5C1F716D7D9D /* GBSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6FC16D2FDD34934495F68 /* GBSettings.m */; };
-		952A073B1A896BDE478C51BA /* GBCli.h in Headers */ = {isa = PBXBuildFile; fileRef = DC84A96FF874E962130BEE68 /* GBCli.h */; };
-		A6F587B21E93F953F48364E5 /* GBOptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B0D8E63DAFC680B8B85758 /* GBOptionsHelper.m */; };
-		AF16519B8AB2109B63CDE081 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C841757951501842CB1DC /* Pods-dummy.m */; };
-		BBEB1025718C8A1A83B690C2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04D46C20832A45150850B7 /* Cocoa.framework */; };
-		DF52366DEA8CD13F32F74D0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04D46C20832A45150850B7 /* Cocoa.framework */; };
+		08AF67DD122A400B3ED6D2BC /* GBCommandLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DAECA2243DF74CE02EF3B0 /* GBCommandLineParser.m */; };
+		0D4F96EC95C80F92300A4FE6 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA22163BA03DB6FF07EACF /* ExampleMetadata.swift */; };
+		0E6B838B0499146319854418 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = A529C11FED6C154EDD2879C8 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EA84B75485C4B141EEE5A1 /* Pods-RubyGensTests-Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C689C201FA6D2EF49AF3A8D7 /* Pods-RubyGensTests-Quick-dummy.m */; };
+		11CDEF7F146B09214F416CA5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A84FDCFB71CCD511075594 /* Cocoa.framework */; };
+		1830D18C5F50E8900C18DF38 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73665C9C491752A4146199 /* MatcherFunc.swift */; };
+		1A9ABE9F8997EE8AB6C9E979 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A84FDCFB71CCD511075594 /* Cocoa.framework */; };
+		23951647971E0F7D8FAD0A82 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95A8CCC7ADD830A11ADC0B /* AssertionDispatcher.swift */; };
+		24EA92212466C1D1F7AEC7E1 /* GBCommandLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = CF134B77407F217EEF4E8851 /* GBCommandLineParser.h */; };
+		259F5210A902B56ED61A00BF /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD125C166A25A0908BDEEC8 /* Functional.swift */; };
+		25CC240EB83B5E992B3532BB /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F78639F29FCCDA8EA19B3EE /* AssertionRecorder.swift */; };
+		276306B0CD7DDFE384395560 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA661D8FD4BBF5B77E423858 /* BeNil.swift */; };
+		35790BEFD74EE51D80182324 /* GBPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDB647EBACC11D6C137D3EF /* GBPrint.h */; };
+		38E3D8BA2637CBD208616F04 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567C04462EB7FF6D5D0D8A60 /* Contain.swift */; };
+		39DDDE3569BFE4A606654B9E /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52635AD59A381A9568BF7E2 /* BeLogical.swift */; };
+		3A1E9974D328ED6B37849D33 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965CD933B52B69306BDC88F /* DSL+Wait.swift */; };
+		3AF6A9F936A3D8625902D2CF /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224336159D2467A42A0A12AE /* NimbleXCTestHandler.swift */; };
+		3D6711FEDEC3A4BAB33F2E43 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BB0228B12272F93E71F02 /* BeLessThanOrEqual.swift */; };
+		3EF8B88FEF1F99CBE76322A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A84FDCFB71CCD511075594 /* Cocoa.framework */; };
+		40D28DC014F67A9F6A7D906C /* Pods-RubyGensTests-Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0F1A1F563FFEBB167E47AE /* Pods-RubyGensTests-Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B58806B3C361E7FA794E11 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9DA0B6961AD16159ED4B53 /* DSL.m */; };
+		497E79652FB257A357A33ABD /* Pods-GBCli-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D89062F3E716DD909BAB5131 /* Pods-GBCli-dummy.m */; };
+		4CA2841566A5088965FA0671 /* Pods-RubyGensTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEC545A8E456A1CEB8307D2 /* Pods-RubyGensTests-dummy.m */; };
+		4D700133997181391EBBFA7F /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE25F0D37BB396D136F18D0 /* BeAKindOf.swift */; };
+		503C05845AA43490358BD017 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFF4AC3D2528DDFAB298447 /* AdapterProtocols.swift */; };
+		511D6FABF40CE60ADD221BB9 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8127E5C55B06715EAC95DA7 /* BeGreaterThan.swift */; };
+		5BE0511E49DD85045EEC0340 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B11F388EDD129BF0C4620 /* QCKDSL.m */; };
+		5E0FF068F9D80EE9A5B5F250 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A84FDCFB71CCD511075594 /* Cocoa.framework */; };
+		610892216518FC12B48B3179 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE6C9C4793115BCC00123F6 /* Stringers.swift */; };
+		610CC3D2F412B8EBE0A5DA77 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 497AA21F99BFED454CDD268D /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61468386F1E99230E48BEFA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A84FDCFB71CCD511075594 /* Cocoa.framework */; };
+		633032CDB53007DDADAA3408 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = F5760D84E74F2692C4367759 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6681D94A521C0D5CD14738ED /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0C3810CC616DBBDA55E4E /* Poll.swift */; };
+		68BA439F4E2E0FB7F95759F3 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90054E7D9F79BFE5836066E6 /* Callsite.swift */; };
+		698D29AA3CD06543E5CC0FF7 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD045E3A7B0E3A57415E1CDF /* BeIdenticalTo.swift */; };
+		6EB9F7CC3A108E56395C6378 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2FBFEA3E42144AA84B2D2F /* World+DSL.swift */; };
+		725B5B29F4A2CF18A6998533 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD38D0AF67BF6342D3DB2A6 /* Pods-dummy.m */; };
+		7377802AC0335271874F5C77 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528E105FBFC42C24A25E13D /* Configuration.swift */; };
+		76B8819993294BCF3364CFC4 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B65D8DF824ED95324331B /* MatcherProtocols.swift */; };
+		79E5A08C667352F7A2880BB3 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C8041D26EED076F8469233 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80DF2A571FF0CDDB91FEDDF5 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0995545CEF0DFB79AB2609A8 /* BeginWith.swift */; };
+		85B3A56C6B4974845F20DFC7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C934B32780A6B2226C00CED /* Example.swift */; };
+		861B1D0FC1AB4D00FD115BE5 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DF9256591637FD739A88C /* ObjCMatcher.swift */; };
+		86330FC09F190E753241529D /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5E364B8E6CCE32292E105 /* ExampleHooks.swift */; };
+		8CB88067013E8A3CA11844CB /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91A3D77984D99A0D9FACBD /* RaisesException.swift */; };
+		9B1ECE83AFAB057FB17D2067 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0C3A1E0FD8F771187B1D0C /* BeLessThan.swift */; };
+		9F0AED0983396CC1148148F5 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B9FF5080932D1E0DC03B3 /* FailureMessage.swift */; };
+		A034892B4B3E774A674DB17C /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0AD6BFF03DC045E1171ABF /* DSL.swift */; };
+		A082207C082195602A1BADB9 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3939EC5D8903E2930B4A2 /* SourceLocation.swift */; };
+		A155E285DCBC8E206461A47C /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 22591A671B3DF4221D50F967 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A312FB9A79448A397AAE6FCE /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D89D132409BEBF8AF303D69 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A351917BBAF00B101955A0CD /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07F44CC1A0D95B58F01DA8 /* Closures.swift */; };
+		A37109942A0EE3AF3689BC98 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEB4A963E33672170CF94A /* AsyncMatcherWrapper.swift */; };
+		A3EFD4B80D511B2184E1D408 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD52B10DAB596500368F30 /* XCTest.framework */; };
+		A722C390FCDEF5BE5A6D48E4 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E5413C67026A9EEED8C07 /* NMBExceptionCapture.m */; };
+		AA70AADF077B36F3F65CB7B9 /* GBOptionsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9623C75C9035E44FC1286A61 /* GBOptionsHelper.h */; };
+		ACD7D0D62FD65EC37AFEB41F /* Pods-RubyGensTests-Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9FD43E31DD4F3320DC9A5E /* Pods-RubyGensTests-Nimble-dummy.m */; };
+		AED3E8E625FCB099A01A13B9 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D61CB8B277365D6D19B037 /* Equal.swift */; };
+		AF6DC864C9FF079D0266D8B3 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B4EA618E05EC6E1D797CFC /* BeEmpty.swift */; };
+		B0E8861FE5B7D68D41BC8047 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1177459647D54AB344C79AAD /* Expectation.swift */; };
+		B4D47102DA5C766600A64D32 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9F09C6022FE0BA5C023C9 /* BeAnInstanceOf.swift */; };
+		B769792A94A3E31DB3158558 /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F50B6EB41E797EAF8D5A7DF /* ObjCExpectation.swift */; };
+		B821B59DD42A77B9C13BD571 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD52B10DAB596500368F30 /* XCTest.framework */; };
+		BA08522EF73EF1F161F676F4 /* GBOptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23218F3303F9D0E6F9EA6AF2 /* GBOptionsHelper.m */; };
+		BB800A4AE362E7C588736F2F /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 7833B4EF9B12D5D1F5B1192A /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD6D8900AF1E31DE15035E4A /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0C2FE551587B67FD606F2 /* EndWith.swift */; };
+		BF8A7C954248467D8FA279AC /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A78BE9836B58EE0C954E9B /* NSString+QCKSelectorName.m */; };
+		C1877B7C4DE85E9ECB4C6F38 /* GBSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A768AB26AEF361493CED282E /* GBSettings.m */; };
+		CA0528309120603853DA2747 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C9FE07BFB8351CAADE30D /* World.swift */; };
+		D55BD3B203C5A683692AE665 /* GBCli.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F5711D28916C60D4A29490 /* GBCli.h */; };
+		DB98BB0F1213768F48C89433 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B447BADFE488FB33DD973784 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBD05A883E65220B6FCED556 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB864F710903608834EF7E /* ExampleGroup.swift */; };
+		DC7A3EED1BFA7A658E861D8B /* Pods-RubyGensTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D026F2527CAC7B6C87177D84 /* Pods-RubyGensTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E21FC82F9795C6FDE9CD2B98 /* Pods-RubyGensTests-Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2980F554AAC0B578AF17D8 /* Pods-RubyGensTests-Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E530E893D5BE23FDC74CDC84 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6933E5C644EBC344A4D7F2 /* QuickConfiguration.m */; };
+		EBCAF680B352862FC0E6D7F0 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972780A32DA9B93F54233B /* DSL.swift */; };
+		EBE37EAC2F3E3706E4DE41C1 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51FE9E06CF14990028520C2 /* AllPass.swift */; };
+		ED71AF058CBDCB0BE85E6D9C /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7011CFCBE88C202668284 /* BeCloseTo.swift */; };
+		EF8C5A9414CA5D16EB8BA32F /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEB4480CB41BE9EC2FEDA0 /* BeGreaterThanOrEqualTo.swift */; };
+		EF96E213F9D5A4703E6F4D40 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457272F0818BEB2E8E37445E /* Match.swift */; };
+		F09D82615EF61546C3A51A3A /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E90DDF6FD62D9A8F68F59A /* Filter.swift */; };
+		F0F05432C50F5B64D62BDFAE /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2062017A11E8642C86C647 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F54D0EA4108E019557E277E6 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943DC22EFCDD16211535B74 /* SuiteHooks.swift */; };
+		FA30DCA43234B48C05D1B30D /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 024853BA6DFF1C9A87532D63 /* QuickSpec.m */; };
+		FA746EEE934707565846062C /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 820EC44CB1E8E954813A78DB /* World+DSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC4A2F1B944E16471D5F43BD /* GBPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C3247ED7B25866FD0387C /* GBPrint.m */; };
+		FD0E890BA8F7D98981476C89 /* GBSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F21711B7A16A01F4A4FE7BA6 /* GBSettings.h */; };
+		FD8BAF6AD7B9C5348FACEF95 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF03902DE9BA39976A78BC6 /* Expression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9ED3779B0014D2174B05A558 /* PBXContainerItemProxy */ = {
+		3B5565B9C05330ED53E4A6D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ED97D456724855BB379A8274 /* Project object */;
+			containerPortal = C32D49FC47E49169949446C9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B75EA2BB21A8A553FFFE7CE;
+			remoteGlobalIDString = 58498DE46934DE550F979DCE;
 			remoteInfo = "Pods-GBCli";
+		};
+		BF8347FDC353BDC49C22B551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32D49FC47E49169949446C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C277D2ACE05A3592100605;
+			remoteInfo = "Pods-RubyGensTests-Quick";
+		};
+		D3EDA160C0EC1FA86985E3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32D49FC47E49169949446C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D0500BA20F0E08C72AF998;
+			remoteInfo = "Pods-RubyGensTests-Nimble";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		052779BBE98D5DD5BC89AE42 /* libPods-GBCli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBCli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		082900B50B6DA8A147C79071 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		126BAEB0B3AAC0B6F263EA80 /* GBPrint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBPrint.m; sourceTree = "<group>"; };
-		1BE3830CA3ACBDAB7DEDDF88 /* GBPrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBPrint.h; sourceTree = "<group>"; };
-		2E0C779B7150698C0DA6E9B9 /* GBSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBSettings.h; sourceTree = "<group>"; };
-		3FDC0AEDA5799A6B490DB17D /* Pods-GBCli-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GBCli-dummy.m"; sourceTree = "<group>"; };
-		4A75C62F39CDA079E8A708BE /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		5AA1007191BBDDCBC8278D71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		65106C93AF117261BA6308F9 /* GBOptionsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBOptionsHelper.h; sourceTree = "<group>"; };
-		65B6FC16D2FDD34934495F68 /* GBSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBSettings.m; sourceTree = "<group>"; };
-		6CDF69C02E6C9F1E5E5A4353 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		6EC826B39C9A2C53CAB24C99 /* GBCommandLineParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBCommandLineParser.h; sourceTree = "<group>"; };
-		7166F2C0034B32AF913F235E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7C3C841757951501842CB1DC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		9F3EC55A03026D94D672E99A /* Pods-GBCli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBCli.xcconfig"; sourceTree = "<group>"; };
-		AA26A4C0357B36571A4E28B7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC04D46C20832A45150850B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		C34AC87C02225B8FCA1457E3 /* Pods-GBCli-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBCli-Private.xcconfig"; sourceTree = "<group>"; };
-		C8E9D347503A075C7132B72A /* Pods-GBCli-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GBCli-prefix.pch"; sourceTree = "<group>"; };
-		C9B0D8E63DAFC680B8B85758 /* GBOptionsHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBOptionsHelper.m; sourceTree = "<group>"; };
-		CB87522C607377D86EA4971D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DA2BB4762EF61F5942888E67 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		DC84A96FF874E962130BEE68 /* GBCli.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBCli.h; sourceTree = "<group>"; };
-		FA5BD9B2A65249D7BA6A59C9 /* GBCommandLineParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBCommandLineParser.m; sourceTree = "<group>"; };
+		024853BA6DFF1C9A87532D63 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
+		05B4EA618E05EC6E1D797CFC /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
+		05C8041D26EED076F8469233 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
+		0995545CEF0DFB79AB2609A8 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		0B6B11F388EDD129BF0C4620 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
+		0B972780A32DA9B93F54233B /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		0BA718CAA9D8F5443A6C1B38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		0D89D132409BEBF8AF303D69 /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
+		0F78639F29FCCDA8EA19B3EE /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		1177459647D54AB344C79AAD /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
+		13ED761F4FBD5482CA0BE385 /* libPods-GBCli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBCli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A5E364B8E6CCE32292E105 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
+		18B3939EC5D8903E2930B4A2 /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
+		192D38213089C41425B58B0D /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DB864F710903608834EF7E /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
+		1C934B32780A6B2226C00CED /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
+		1CB7011CFCBE88C202668284 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
+		224336159D2467A42A0A12AE /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		22591A671B3DF4221D50F967 /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
+		23218F3303F9D0E6F9EA6AF2 /* GBOptionsHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBOptionsHelper.m; sourceTree = "<group>"; };
+		2528E105FBFC42C24A25E13D /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+		25311A23424B843B58228E8F /* Pods-RubyGensTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RubyGensTests-resources.sh"; sourceTree = "<group>"; };
+		28D61CB8B277365D6D19B037 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
+		30F51E1483EA703FB87F4413 /* Pods-RubyGensTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RubyGensTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		31A84FDCFB71CCD511075594 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		32F5711D28916C60D4A29490 /* GBCli.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBCli.h; sourceTree = "<group>"; };
+		35E90DDF6FD62D9A8F68F59A /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
+		3A9F94A30DA255C162A72AAF /* Pods-RubyGensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyGensTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C919EA931073BCC95D12BD0 /* Pods-RubyGensTests-Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RubyGensTests-Quick.modulemap"; sourceTree = "<group>"; };
+		3E07F44CC1A0D95B58F01DA8 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		3ED9F09C6022FE0BA5C023C9 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		3F50B6EB41E797EAF8D5A7DF /* ObjCExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCExpectation.swift; path = Nimble/ObjCExpectation.swift; sourceTree = "<group>"; };
+		44F3D1C40D0F5DEB4DFE3CB1 /* Pods_RubyGensTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubyGensTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		457272F0818BEB2E8E37445E /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
+		45AA22163BA03DB6FF07EACF /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
+		46A78BE9836B58EE0C954E9B /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
+		497AA21F99BFED454CDD268D /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
+		4BDB647EBACC11D6C137D3EF /* GBPrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBPrint.h; sourceTree = "<group>"; };
+		567C04462EB7FF6D5D0D8A60 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
+		57E1A32AA27A083F23BE2D63 /* Pods-RubyGensTests-Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyGensTests-Quick.xcconfig"; sourceTree = "<group>"; };
+		5828A86EEE6405DA5EA0C8CB /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C1DF9256591637FD739A88C /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
+		5C31EA766EBA4D5F92C20AC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		5C73665C9C491752A4146199 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
+		6463F1BAC6B524B428592732 /* Pods-GBCli-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GBCli-prefix.pch"; sourceTree = "<group>"; };
+		68D52448BBE0CF07C209B6D7 /* Pods-RubyGensTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RubyGensTests-frameworks.sh"; sourceTree = "<group>"; };
+		6965CD933B52B69306BDC88F /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
+		6CDEB4A963E33672170CF94A /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		6D9FD43E31DD4F3320DC9A5E /* Pods-RubyGensTests-Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RubyGensTests-Nimble-dummy.m"; sourceTree = "<group>"; };
+		6F29E8B19F9E7235F86088A3 /* Pods-RubyGensTests-Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RubyGensTests-Nimble.modulemap"; sourceTree = "<group>"; };
+		6FF03902DE9BA39976A78BC6 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
+		70D0C3810CC616DBBDA55E4E /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
+		71FEB4480CB41BE9EC2FEDA0 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		744B65D8DF824ED95324331B /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
+		7833B4EF9B12D5D1F5B1192A /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Quick/World.h; sourceTree = "<group>"; };
+		78373EEF70F3E6FD7C0821A3 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CDFF866660CEE3517C4333 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		7A2980F554AAC0B578AF17D8 /* Pods-RubyGensTests-Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RubyGensTests-Quick-umbrella.h"; sourceTree = "<group>"; };
+		7A321FD1D484C8891686E3A0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7BD125C166A25A0908BDEEC8 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
+		7E0AD6BFF03DC045E1171ABF /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		7E5B9FF5080932D1E0DC03B3 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		7EF0965638E9C56BC21C1C23 /* Pods-RubyGensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyGensTests.release.xcconfig"; sourceTree = "<group>"; };
+		8135BCB1309D79742B590C25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820EC44CB1E8E954813A78DB /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Quick/DSL/World+DSL.h"; sourceTree = "<group>"; };
+		874D87EFBEB8ED6A13BC0E6D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		875C5F1EC290A4C39CCC3769 /* Pods-GBCli-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBCli-Private.xcconfig"; sourceTree = "<group>"; };
+		87FA8C354EFDE3F76AB845B0 /* Pods-RubyGensTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RubyGensTests-environment.h"; sourceTree = "<group>"; };
+		8BD38D0AF67BF6342D3DB2A6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		90054E7D9F79BFE5836066E6 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
+		9623C75C9035E44FC1286A61 /* GBOptionsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBOptionsHelper.h; sourceTree = "<group>"; };
+		9730D00EF03DB770478CA63F /* Pods-RubyGensTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RubyGensTests.modulemap"; sourceTree = "<group>"; };
+		9850E241A3AA46AB854B4CB1 /* Pods-RubyGensTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RubyGensTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B91A3D77984D99A0D9FACBD /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
+		9D0C3A1E0FD8F771187B1D0C /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
+		9ED0C2FE551587B67FD606F2 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		A529C11FED6C154EDD2879C8 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
+		A58C9FE07BFB8351CAADE30D /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
+		A768AB26AEF361493CED282E /* GBSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBSettings.m; sourceTree = "<group>"; };
+		AC0F1A1F563FFEBB167E47AE /* Pods-RubyGensTests-Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RubyGensTests-Nimble-umbrella.h"; sourceTree = "<group>"; };
+		AE15A969C2DF4401CFFBB12E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFF4AC3D2528DDFAB298447 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		B447BADFE488FB33DD973784 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
+		B8127E5C55B06715EAC95DA7 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
+		BB2062017A11E8642C86C647 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
+		BC6933E5C644EBC344A4D7F2 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
+		BFFD52B10DAB596500368F30 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C006E5570F5BE806A6B4B85E /* Pods-RubyGensTests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyGensTests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
+		C3964A933D22899ECF96DFF6 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C52635AD59A381A9568BF7E2 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		C689C201FA6D2EF49AF3A8D7 /* Pods-RubyGensTests-Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RubyGensTests-Quick-dummy.m"; sourceTree = "<group>"; };
+		CB5C3247ED7B25866FD0387C /* GBPrint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBPrint.m; sourceTree = "<group>"; };
+		CF134B77407F217EEF4E8851 /* GBCommandLineParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBCommandLineParser.h; sourceTree = "<group>"; };
+		D026F2527CAC7B6C87177D84 /* Pods-RubyGensTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RubyGensTests-umbrella.h"; sourceTree = "<group>"; };
+		D613EE8D3C5E13D52DE28D64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89062F3E716DD909BAB5131 /* Pods-GBCli-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GBCli-dummy.m"; sourceTree = "<group>"; };
+		D943DC22EFCDD16211535B74 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
+		DA7BB0228B12272F93E71F02 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		DCC340ED4198FB8029CF87BC /* Pods-RubyGensTests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyGensTests-Nimble.xcconfig"; sourceTree = "<group>"; };
+		DD045E3A7B0E3A57415E1CDF /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
+		DDE25F0D37BB396D136F18D0 /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
+		DEE6C9C4793115BCC00123F6 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
+		DEEC545A8E456A1CEB8307D2 /* Pods-RubyGensTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RubyGensTests-dummy.m"; sourceTree = "<group>"; };
+		DF2FBFEA3E42144AA84B2D2F /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
+		E51FE9E06CF14990028520C2 /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		E72DA8B5FACD087A349BEC36 /* Pods-RubyGensTests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RubyGensTests-Quick-prefix.pch"; sourceTree = "<group>"; };
+		E8DAECA2243DF74CE02EF3B0 /* GBCommandLineParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GBCommandLineParser.m; sourceTree = "<group>"; };
+		EBB5F197900EC474D3C2E62D /* Pods-GBCli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GBCli.xcconfig"; sourceTree = "<group>"; };
+		F03B2FCB436A5A09C9693DE9 /* Pods-RubyGensTests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RubyGensTests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		F1D608628FAF30922F9C9351 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		F21711B7A16A01F4A4FE7BA6 /* GBSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GBSettings.h; sourceTree = "<group>"; };
+		F4DC3852FCC065BF8DFE6D0F /* Pods-RubyGensTests-Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RubyGensTests-Nimble-prefix.pch"; sourceTree = "<group>"; };
+		F5760D84E74F2692C4367759 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
+		FA661D8FD4BBF5B77E423858 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		FB95A8CCC7ADD830A11ADC0B /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
+		FC3E5413C67026A9EEED8C07 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		FF9DA0B6961AD16159ED4B53 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A3F20EF14518B3BBACA619C /* Frameworks */ = {
+		A496B30551EBD2E8146CCABA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF52366DEA8CD13F32F74D0E /* Cocoa.framework in Frameworks */,
+				5E0FF068F9D80EE9A5B5F250 /* Cocoa.framework in Frameworks */,
+				B821B59DD42A77B9C13BD571 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2B052EF074A1B36EDF36F35 /* Frameworks */ = {
+		BE92268A1AFFE2CB8147DB2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBEB1025718C8A1A83B690C2 /* Cocoa.framework in Frameworks */,
+				1A9ABE9F8997EE8AB6C9E979 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD83AB1C5BF72613B4D8BF36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61468386F1E99230E48BEFA9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4154710978C186BEB274307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CDEF7F146B09214F416CA5 /* Cocoa.framework in Frameworks */,
+				A3EFD4B80D511B2184E1D408 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBAB92A6810F3F097A7022B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF8B88FEF1F99CBE76322A7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0910B81236438D29B83D11A2 /* Support Files */ = {
+		1006EB0319B6C28E980AAF0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F3EC55A03026D94D672E99A /* Pods-GBCli.xcconfig */,
-				C34AC87C02225B8FCA1457E3 /* Pods-GBCli-Private.xcconfig */,
-				3FDC0AEDA5799A6B490DB17D /* Pods-GBCli-dummy.m */,
-				C8E9D347503A075C7132B72A /* Pods-GBCli-prefix.pch */,
+				3FA06A006C95380922B54E91 /* OS X */,
 			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/Pods-GBCli";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		275028ACBDEC7F9A30CD1CD9 /* src */ = {
+		147AC4A25E28A487B5A89491 /* Quick */ = {
 			isa = PBXGroup;
 			children = (
-				DC84A96FF874E962130BEE68 /* GBCli.h */,
-				6EC826B39C9A2C53CAB24C99 /* GBCommandLineParser.h */,
-				FA5BD9B2A65249D7BA6A59C9 /* GBCommandLineParser.m */,
-				65106C93AF117261BA6308F9 /* GBOptionsHelper.h */,
-				C9B0D8E63DAFC680B8B85758 /* GBOptionsHelper.m */,
-				1BE3830CA3ACBDAB7DEDDF88 /* GBPrint.h */,
-				126BAEB0B3AAC0B6F263EA80 /* GBPrint.m */,
-				2E0C779B7150698C0DA6E9B9 /* GBSettings.h */,
-				65B6FC16D2FDD34934495F68 /* GBSettings.m */,
+				90054E7D9F79BFE5836066E6 /* Callsite.swift */,
+				3E07F44CC1A0D95B58F01DA8 /* Closures.swift */,
+				2528E105FBFC42C24A25E13D /* Configuration.swift */,
+				7E0AD6BFF03DC045E1171ABF /* DSL.swift */,
+				1C934B32780A6B2226C00CED /* Example.swift */,
+				19DB864F710903608834EF7E /* ExampleGroup.swift */,
+				17A5E364B8E6CCE32292E105 /* ExampleHooks.swift */,
+				45AA22163BA03DB6FF07EACF /* ExampleMetadata.swift */,
+				35E90DDF6FD62D9A8F68F59A /* Filter.swift */,
+				22591A671B3DF4221D50F967 /* NSString+QCKSelectorName.h */,
+				46A78BE9836B58EE0C954E9B /* NSString+QCKSelectorName.m */,
+				A529C11FED6C154EDD2879C8 /* QCKDSL.h */,
+				0B6B11F388EDD129BF0C4620 /* QCKDSL.m */,
+				0D89D132409BEBF8AF303D69 /* Quick.h */,
+				B447BADFE488FB33DD973784 /* QuickConfiguration.h */,
+				BC6933E5C644EBC344A4D7F2 /* QuickConfiguration.m */,
+				05C8041D26EED076F8469233 /* QuickSpec.h */,
+				024853BA6DFF1C9A87532D63 /* QuickSpec.m */,
+				D943DC22EFCDD16211535B74 /* SuiteHooks.swift */,
+				7833B4EF9B12D5D1F5B1192A /* World.h */,
+				A58C9FE07BFB8351CAADE30D /* World.swift */,
+				820EC44CB1E8E954813A78DB /* World+DSL.h */,
+				DF2FBFEA3E42144AA84B2D2F /* World+DSL.swift */,
+				DCC8BEECC2ABF27E58984006 /* Support Files */,
 			);
-			path = src;
+			path = Quick;
 			sourceTree = "<group>";
 		};
-		2BE1CDFF4BA04AD3575100E2 /* GBCli */ = {
+		1E315AD640164C7C5949B00A /* GBCli */ = {
 			isa = PBXGroup;
 			children = (
-				275028ACBDEC7F9A30CD1CD9 /* src */,
-			);
-			path = GBCli;
-			sourceTree = "<group>";
-		};
-		2DB9CDA8C29690B783DDF0DA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				082900B50B6DA8A147C79071 /* libPods.a */,
-				052779BBE98D5DD5BC89AE42 /* libPods-GBCli.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		529B0B4899B79EFBF05AA3A8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7166F2C0034B32AF913F235E /* Pods-acknowledgements.markdown */,
-				6CDF69C02E6C9F1E5E5A4353 /* Pods-acknowledgements.plist */,
-				7C3C841757951501842CB1DC /* Pods-dummy.m */,
-				4A75C62F39CDA079E8A708BE /* Pods-environment.h */,
-				DA2BB4762EF61F5942888E67 /* Pods-resources.sh */,
-				5AA1007191BBDDCBC8278D71 /* Pods.debug.xcconfig */,
-				CB87522C607377D86EA4971D /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		A3137174B27DE0EB541776A3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				529B0B4899B79EFBF05AA3A8 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AACA937AA291A58CF6EE7C24 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				AC04D46C20832A45150850B7 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		BE4F71D8D488D276459BCD8A /* GBCli */ = {
-			isa = PBXGroup;
-			children = (
-				2BE1CDFF4BA04AD3575100E2 /* GBCli */,
-				0910B81236438D29B83D11A2 /* Support Files */,
+				3E7FB612D97601A99525FC46 /* GBCli */,
+				D58D791C13A06532F4B6119E /* Support Files */,
 			);
 			name = GBCli;
 			path = ../External/GBCli;
 			sourceTree = "<group>";
 		};
-		D7785EE6738198B9B96D07A9 /* Frameworks */ = {
+		22E096FE3874C7060B3A9B47 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AACA937AA291A58CF6EE7C24 /* OS X */,
+				417DD3BA2BF2F2FEEF7B3383 /* Pods */,
+				6F2B2C20BD81FABDE4C7B304 /* Pods-RubyGensTests */,
 			);
-			name = Frameworks;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EB8BC4F8B56540B3D92A0D94 = {
+		2E49DC7AE131604B66FCD9DC /* Nimble */ = {
 			isa = PBXGroup;
 			children = (
-				AA26A4C0357B36571A4E28B7 /* Podfile */,
-				F1D9C52023D0537F65BD274A /* Development Pods */,
-				D7785EE6738198B9B96D07A9 /* Frameworks */,
-				2DB9CDA8C29690B783DDF0DA /* Products */,
-				A3137174B27DE0EB541776A3 /* Targets Support Files */,
+				AEFF4AC3D2528DDFAB298447 /* AdapterProtocols.swift */,
+				E51FE9E06CF14990028520C2 /* AllPass.swift */,
+				FB95A8CCC7ADD830A11ADC0B /* AssertionDispatcher.swift */,
+				0F78639F29FCCDA8EA19B3EE /* AssertionRecorder.swift */,
+				6CDEB4A963E33672170CF94A /* AsyncMatcherWrapper.swift */,
+				DDE25F0D37BB396D136F18D0 /* BeAKindOf.swift */,
+				3ED9F09C6022FE0BA5C023C9 /* BeAnInstanceOf.swift */,
+				1CB7011CFCBE88C202668284 /* BeCloseTo.swift */,
+				05B4EA618E05EC6E1D797CFC /* BeEmpty.swift */,
+				B8127E5C55B06715EAC95DA7 /* BeGreaterThan.swift */,
+				71FEB4480CB41BE9EC2FEDA0 /* BeGreaterThanOrEqualTo.swift */,
+				DD045E3A7B0E3A57415E1CDF /* BeIdenticalTo.swift */,
+				9D0C3A1E0FD8F771187B1D0C /* BeLessThan.swift */,
+				DA7BB0228B12272F93E71F02 /* BeLessThanOrEqual.swift */,
+				C52635AD59A381A9568BF7E2 /* BeLogical.swift */,
+				FA661D8FD4BBF5B77E423858 /* BeNil.swift */,
+				0995545CEF0DFB79AB2609A8 /* BeginWith.swift */,
+				567C04462EB7FF6D5D0D8A60 /* Contain.swift */,
+				497AA21F99BFED454CDD268D /* DSL.h */,
+				FF9DA0B6961AD16159ED4B53 /* DSL.m */,
+				0B972780A32DA9B93F54233B /* DSL.swift */,
+				6965CD933B52B69306BDC88F /* DSL+Wait.swift */,
+				9ED0C2FE551587B67FD606F2 /* EndWith.swift */,
+				28D61CB8B277365D6D19B037 /* Equal.swift */,
+				1177459647D54AB344C79AAD /* Expectation.swift */,
+				6FF03902DE9BA39976A78BC6 /* Expression.swift */,
+				7E5B9FF5080932D1E0DC03B3 /* FailureMessage.swift */,
+				7BD125C166A25A0908BDEEC8 /* Functional.swift */,
+				457272F0818BEB2E8E37445E /* Match.swift */,
+				5C73665C9C491752A4146199 /* MatcherFunc.swift */,
+				744B65D8DF824ED95324331B /* MatcherProtocols.swift */,
+				BB2062017A11E8642C86C647 /* NMBExceptionCapture.h */,
+				FC3E5413C67026A9EEED8C07 /* NMBExceptionCapture.m */,
+				F5760D84E74F2692C4367759 /* Nimble.h */,
+				224336159D2467A42A0A12AE /* NimbleXCTestHandler.swift */,
+				3F50B6EB41E797EAF8D5A7DF /* ObjCExpectation.swift */,
+				5C1DF9256591637FD739A88C /* ObjCMatcher.swift */,
+				70D0C3810CC616DBBDA55E4E /* Poll.swift */,
+				9B91A3D77984D99A0D9FACBD /* RaisesException.swift */,
+				18B3939EC5D8903E2930B4A2 /* SourceLocation.swift */,
+				DEE6C9C4793115BCC00123F6 /* Stringers.swift */,
+				7360C539E340B339BC77DEB5 /* Support Files */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		3E7FB612D97601A99525FC46 /* GBCli */ = {
+			isa = PBXGroup;
+			children = (
+				7499FC29F5274ADD8F2263A4 /* src */,
+			);
+			path = GBCli;
+			sourceTree = "<group>";
+		};
+		3FA06A006C95380922B54E91 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				31A84FDCFB71CCD511075594 /* Cocoa.framework */,
+				BFFD52B10DAB596500368F30 /* XCTest.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		417DD3BA2BF2F2FEEF7B3383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3964A933D22899ECF96DFF6 /* Pods-acknowledgements.markdown */,
+				5828A86EEE6405DA5EA0C8CB /* Pods-acknowledgements.plist */,
+				8BD38D0AF67BF6342D3DB2A6 /* Pods-dummy.m */,
+				79CDFF866660CEE3517C4333 /* Pods-environment.h */,
+				0BA718CAA9D8F5443A6C1B38 /* Pods-resources.sh */,
+				5C31EA766EBA4D5F92C20AC0 /* Pods.debug.xcconfig */,
+				F1D608628FAF30922F9C9351 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		6071DB0C75D0BD84C2553BB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E49DC7AE131604B66FCD9DC /* Nimble */,
+				147AC4A25E28A487B5A89491 /* Quick */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F2B2C20BD81FABDE4C7B304 /* Pods-RubyGensTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE15A969C2DF4401CFFBB12E /* Info.plist */,
+				9730D00EF03DB770478CA63F /* Pods-RubyGensTests.modulemap */,
+				9850E241A3AA46AB854B4CB1 /* Pods-RubyGensTests-acknowledgements.markdown */,
+				30F51E1483EA703FB87F4413 /* Pods-RubyGensTests-acknowledgements.plist */,
+				DEEC545A8E456A1CEB8307D2 /* Pods-RubyGensTests-dummy.m */,
+				87FA8C354EFDE3F76AB845B0 /* Pods-RubyGensTests-environment.h */,
+				68D52448BBE0CF07C209B6D7 /* Pods-RubyGensTests-frameworks.sh */,
+				25311A23424B843B58228E8F /* Pods-RubyGensTests-resources.sh */,
+				D026F2527CAC7B6C87177D84 /* Pods-RubyGensTests-umbrella.h */,
+				3A9F94A30DA255C162A72AAF /* Pods-RubyGensTests.debug.xcconfig */,
+				7EF0965638E9C56BC21C1C23 /* Pods-RubyGensTests.release.xcconfig */,
+			);
+			name = "Pods-RubyGensTests";
+			path = "Target Support Files/Pods-RubyGensTests";
+			sourceTree = "<group>";
+		};
+		7360C539E340B339BC77DEB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8135BCB1309D79742B590C25 /* Info.plist */,
+				6F29E8B19F9E7235F86088A3 /* Pods-RubyGensTests-Nimble.modulemap */,
+				DCC340ED4198FB8029CF87BC /* Pods-RubyGensTests-Nimble.xcconfig */,
+				C006E5570F5BE806A6B4B85E /* Pods-RubyGensTests-Nimble-Private.xcconfig */,
+				6D9FD43E31DD4F3320DC9A5E /* Pods-RubyGensTests-Nimble-dummy.m */,
+				F4DC3852FCC065BF8DFE6D0F /* Pods-RubyGensTests-Nimble-prefix.pch */,
+				AC0F1A1F563FFEBB167E47AE /* Pods-RubyGensTests-Nimble-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RubyGensTests-Nimble";
+			sourceTree = "<group>";
+		};
+		7499FC29F5274ADD8F2263A4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				32F5711D28916C60D4A29490 /* GBCli.h */,
+				CF134B77407F217EEF4E8851 /* GBCommandLineParser.h */,
+				E8DAECA2243DF74CE02EF3B0 /* GBCommandLineParser.m */,
+				9623C75C9035E44FC1286A61 /* GBOptionsHelper.h */,
+				23218F3303F9D0E6F9EA6AF2 /* GBOptionsHelper.m */,
+				4BDB647EBACC11D6C137D3EF /* GBPrint.h */,
+				CB5C3247ED7B25866FD0387C /* GBPrint.m */,
+				F21711B7A16A01F4A4FE7BA6 /* GBSettings.h */,
+				A768AB26AEF361493CED282E /* GBSettings.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A9698C3A4C7CB80493B25D40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				192D38213089C41425B58B0D /* Nimble.framework */,
+				44F3D1C40D0F5DEB4DFE3CB1 /* Pods_RubyGensTests.framework */,
+				78373EEF70F3E6FD7C0821A3 /* Quick.framework */,
+				874D87EFBEB8ED6A13BC0E6D /* libPods.a */,
+				13ED761F4FBD5482CA0BE385 /* libPods-GBCli.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C020FA195B1B9867D7D601B7 = {
+			isa = PBXGroup;
+			children = (
+				7A321FD1D484C8891686E3A0 /* Podfile */,
+				D02ADDA4BAB6B7BB32EC5684 /* Development Pods */,
+				1006EB0319B6C28E980AAF0C /* Frameworks */,
+				6071DB0C75D0BD84C2553BB2 /* Pods */,
+				A9698C3A4C7CB80493B25D40 /* Products */,
+				22E096FE3874C7060B3A9B47 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F1D9C52023D0537F65BD274A /* Development Pods */ = {
+		D02ADDA4BAB6B7BB32EC5684 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BE4F71D8D488D276459BCD8A /* GBCli */,
+				1E315AD640164C7C5949B00A /* GBCli */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D58D791C13A06532F4B6119E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5F197900EC474D3C2E62D /* Pods-GBCli.xcconfig */,
+				875C5F1EC290A4C39CCC3769 /* Pods-GBCli-Private.xcconfig */,
+				D89062F3E716DD909BAB5131 /* Pods-GBCli-dummy.m */,
+				6463F1BAC6B524B428592732 /* Pods-GBCli-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/Pods-GBCli";
+			sourceTree = "<group>";
+		};
+		DCC8BEECC2ABF27E58984006 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D613EE8D3C5E13D52DE28D64 /* Info.plist */,
+				3C919EA931073BCC95D12BD0 /* Pods-RubyGensTests-Quick.modulemap */,
+				57E1A32AA27A083F23BE2D63 /* Pods-RubyGensTests-Quick.xcconfig */,
+				F03B2FCB436A5A09C9693DE9 /* Pods-RubyGensTests-Quick-Private.xcconfig */,
+				C689C201FA6D2EF49AF3A8D7 /* Pods-RubyGensTests-Quick-dummy.m */,
+				E72DA8B5FACD087A349BEC36 /* Pods-RubyGensTests-Quick-prefix.pch */,
+				7A2980F554AAC0B578AF17D8 /* Pods-RubyGensTests-Quick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RubyGensTests-Quick";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E172AA0F278095A82BFCCBCD /* Headers */ = {
+		20BCE59C1C4F60D6B1A0F13C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				952A073B1A896BDE478C51BA /* GBCli.h in Headers */,
-				7F71B11F607C0EF473D2F92C /* GBCommandLineParser.h in Headers */,
-				6CD22EF2C249509D7B84E3E3 /* GBOptionsHelper.h in Headers */,
-				55817087862F7F281182974F /* GBPrint.h in Headers */,
-				6B27FD85569AFC572B1A7440 /* GBSettings.h in Headers */,
+				610CC3D2F412B8EBE0A5DA77 /* DSL.h in Headers */,
+				F0F05432C50F5B64D62BDFAE /* NMBExceptionCapture.h in Headers */,
+				633032CDB53007DDADAA3408 /* Nimble.h in Headers */,
+				40D28DC014F67A9F6A7D906C /* Pods-RubyGensTests-Nimble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F01D861F9B36B888A38A72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A155E285DCBC8E206461A47C /* NSString+QCKSelectorName.h in Headers */,
+				E21FC82F9795C6FDE9CD2B98 /* Pods-RubyGensTests-Quick-umbrella.h in Headers */,
+				0E6B838B0499146319854418 /* QCKDSL.h in Headers */,
+				A312FB9A79448A397AAE6FCE /* Quick.h in Headers */,
+				DB98BB0F1213768F48C89433 /* QuickConfiguration.h in Headers */,
+				79E5A08C667352F7A2880BB3 /* QuickSpec.h in Headers */,
+				FA746EEE934707565846062C /* World+DSL.h in Headers */,
+				BB800A4AE362E7C588736F2F /* World.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49ACBC6B76808D2789AD62B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7A3EED1BFA7A658E861D8B /* Pods-RubyGensTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBB0409E049BC30D45A3D4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55BD3B203C5A683692AE665 /* GBCli.h in Headers */,
+				24EA92212466C1D1F7AEC7E1 /* GBCommandLineParser.h in Headers */,
+				AA70AADF077B36F3F65CB7B9 /* GBOptionsHelper.h in Headers */,
+				35790BEFD74EE51D80182324 /* GBPrint.h in Headers */,
+				FD0E890BA8F7D98981476C89 /* GBSettings.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		20611743C436139AE7F2CA38 /* Pods */ = {
+		18C277D2ACE05A3592100605 /* Pods-RubyGensTests-Quick */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA2A71ED24ED276C5D555E8C /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 867A50ACD3C84B7091AB6D7B /* Build configuration list for PBXNativeTarget "Pods-RubyGensTests-Quick" */;
 			buildPhases = (
-				7ECCB002BAB7FE739962138D /* Sources */,
-				5A3F20EF14518B3BBACA619C /* Frameworks */,
+				006CF4E420C14CB40014AF4D /* Sources */,
+				A496B30551EBD2E8146CCABA /* Frameworks */,
+				45F01D861F9B36B888A38A72 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D212026AE9FA238A17C67F10 /* PBXTargetDependency */,
+			);
+			name = "Pods-RubyGensTests-Quick";
+			productName = "Pods-RubyGensTests-Quick";
+			productReference = 78373EEF70F3E6FD7C0821A3 /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1DA9BF7C37CE164DFB4184CD /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDCFC95E9A38CAEF941005ED /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				BC848887720A29F4170D538E /* Sources */,
+				BE92268A1AFFE2CB8147DB2C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D8431B142921DFDD8B4D576 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 082900B50B6DA8A147C79071 /* libPods.a */;
+			productReference = 874D87EFBEB8ED6A13BC0E6D /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9B75EA2BB21A8A553FFFE7CE /* Pods-GBCli */ = {
+		58498DE46934DE550F979DCE /* Pods-GBCli */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8075048D215678A0018713C /* Build configuration list for PBXNativeTarget "Pods-GBCli" */;
+			buildConfigurationList = 51FC9823E9B557DD66C76AD7 /* Build configuration list for PBXNativeTarget "Pods-GBCli" */;
 			buildPhases = (
-				D22718B9C7857BF882BF49E3 /* Sources */,
-				A2B052EF074A1B36EDF36F35 /* Frameworks */,
-				E172AA0F278095A82BFCCBCD /* Headers */,
+				8835272DE04200267549C25F /* Sources */,
+				FEBAB92A6810F3F097A7022B /* Frameworks */,
+				BDBB0409E049BC30D45A3D4B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -241,69 +644,289 @@
 			);
 			name = "Pods-GBCli";
 			productName = "Pods-GBCli";
-			productReference = 052779BBE98D5DD5BC89AE42 /* libPods-GBCli.a */;
+			productReference = 13ED761F4FBD5482CA0BE385 /* libPods-GBCli.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		6481D3CD495A2F026010C90C /* Pods-RubyGensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CA35697B0F77DE94A55D0C /* Build configuration list for PBXNativeTarget "Pods-RubyGensTests" */;
+			buildPhases = (
+				6B4968A76A7950A752ACE074 /* Sources */,
+				CD83AB1C5BF72613B4D8BF36 /* Frameworks */,
+				49ACBC6B76808D2789AD62B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				365B48666507546B6653E729 /* PBXTargetDependency */,
+				9E996A1B19B81CB779B19AF9 /* PBXTargetDependency */,
+			);
+			name = "Pods-RubyGensTests";
+			productName = "Pods-RubyGensTests";
+			productReference = 44F3D1C40D0F5DEB4DFE3CB1 /* Pods_RubyGensTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1D0500BA20F0E08C72AF998 /* Pods-RubyGensTests-Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE23E1C3EC20311B84D79F58 /* Build configuration list for PBXNativeTarget "Pods-RubyGensTests-Nimble" */;
+			buildPhases = (
+				5588E63E8D84E6A043560A11 /* Sources */,
+				F4154710978C186BEB274307 /* Frameworks */,
+				20BCE59C1C4F60D6B1A0F13C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RubyGensTests-Nimble";
+			productName = "Pods-RubyGensTests-Nimble";
+			productReference = 192D38213089C41425B58B0D /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED97D456724855BB379A8274 /* Project object */ = {
+		C32D49FC47E49169949446C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = AE97190ADA37E534FC48514E /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 5E2138FD21D2FD89C5C58B05 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EB8BC4F8B56540B3D92A0D94;
-			productRefGroup = 2DB9CDA8C29690B783DDF0DA /* Products */;
+			mainGroup = C020FA195B1B9867D7D601B7;
+			productRefGroup = A9698C3A4C7CB80493B25D40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20611743C436139AE7F2CA38 /* Pods */,
-				9B75EA2BB21A8A553FFFE7CE /* Pods-GBCli */,
+				1DA9BF7C37CE164DFB4184CD /* Pods */,
+				58498DE46934DE550F979DCE /* Pods-GBCli */,
+				6481D3CD495A2F026010C90C /* Pods-RubyGensTests */,
+				A1D0500BA20F0E08C72AF998 /* Pods-RubyGensTests-Nimble */,
+				18C277D2ACE05A3592100605 /* Pods-RubyGensTests-Quick */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7ECCB002BAB7FE739962138D /* Sources */ = {
+		006CF4E420C14CB40014AF4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF16519B8AB2109B63CDE081 /* Pods-dummy.m in Sources */,
+				68BA439F4E2E0FB7F95759F3 /* Callsite.swift in Sources */,
+				A351917BBAF00B101955A0CD /* Closures.swift in Sources */,
+				7377802AC0335271874F5C77 /* Configuration.swift in Sources */,
+				A034892B4B3E774A674DB17C /* DSL.swift in Sources */,
+				85B3A56C6B4974845F20DFC7 /* Example.swift in Sources */,
+				DBD05A883E65220B6FCED556 /* ExampleGroup.swift in Sources */,
+				86330FC09F190E753241529D /* ExampleHooks.swift in Sources */,
+				0D4F96EC95C80F92300A4FE6 /* ExampleMetadata.swift in Sources */,
+				F09D82615EF61546C3A51A3A /* Filter.swift in Sources */,
+				BF8A7C954248467D8FA279AC /* NSString+QCKSelectorName.m in Sources */,
+				10EA84B75485C4B141EEE5A1 /* Pods-RubyGensTests-Quick-dummy.m in Sources */,
+				5BE0511E49DD85045EEC0340 /* QCKDSL.m in Sources */,
+				E530E893D5BE23FDC74CDC84 /* QuickConfiguration.m in Sources */,
+				FA30DCA43234B48C05D1B30D /* QuickSpec.m in Sources */,
+				F54D0EA4108E019557E277E6 /* SuiteHooks.swift in Sources */,
+				6EB9F7CC3A108E56395C6378 /* World+DSL.swift in Sources */,
+				CA0528309120603853DA2747 /* World.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D22718B9C7857BF882BF49E3 /* Sources */ = {
+		5588E63E8D84E6A043560A11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE48FDB25653D61641FEABD /* GBCommandLineParser.m in Sources */,
-				A6F587B21E93F953F48364E5 /* GBOptionsHelper.m in Sources */,
-				03E02CB17A698703D0FE34A9 /* GBPrint.m in Sources */,
-				91A6F129283C5C1F716D7D9D /* GBSettings.m in Sources */,
-				51B02A979A090AB108F44AAF /* Pods-GBCli-dummy.m in Sources */,
+				503C05845AA43490358BD017 /* AdapterProtocols.swift in Sources */,
+				EBE37EAC2F3E3706E4DE41C1 /* AllPass.swift in Sources */,
+				23951647971E0F7D8FAD0A82 /* AssertionDispatcher.swift in Sources */,
+				25CC240EB83B5E992B3532BB /* AssertionRecorder.swift in Sources */,
+				A37109942A0EE3AF3689BC98 /* AsyncMatcherWrapper.swift in Sources */,
+				4D700133997181391EBBFA7F /* BeAKindOf.swift in Sources */,
+				B4D47102DA5C766600A64D32 /* BeAnInstanceOf.swift in Sources */,
+				ED71AF058CBDCB0BE85E6D9C /* BeCloseTo.swift in Sources */,
+				AF6DC864C9FF079D0266D8B3 /* BeEmpty.swift in Sources */,
+				511D6FABF40CE60ADD221BB9 /* BeGreaterThan.swift in Sources */,
+				EF8C5A9414CA5D16EB8BA32F /* BeGreaterThanOrEqualTo.swift in Sources */,
+				698D29AA3CD06543E5CC0FF7 /* BeIdenticalTo.swift in Sources */,
+				9B1ECE83AFAB057FB17D2067 /* BeLessThan.swift in Sources */,
+				3D6711FEDEC3A4BAB33F2E43 /* BeLessThanOrEqual.swift in Sources */,
+				39DDDE3569BFE4A606654B9E /* BeLogical.swift in Sources */,
+				276306B0CD7DDFE384395560 /* BeNil.swift in Sources */,
+				80DF2A571FF0CDDB91FEDDF5 /* BeginWith.swift in Sources */,
+				38E3D8BA2637CBD208616F04 /* Contain.swift in Sources */,
+				3A1E9974D328ED6B37849D33 /* DSL+Wait.swift in Sources */,
+				43B58806B3C361E7FA794E11 /* DSL.m in Sources */,
+				EBCAF680B352862FC0E6D7F0 /* DSL.swift in Sources */,
+				BD6D8900AF1E31DE15035E4A /* EndWith.swift in Sources */,
+				AED3E8E625FCB099A01A13B9 /* Equal.swift in Sources */,
+				B0E8861FE5B7D68D41BC8047 /* Expectation.swift in Sources */,
+				FD8BAF6AD7B9C5348FACEF95 /* Expression.swift in Sources */,
+				9F0AED0983396CC1148148F5 /* FailureMessage.swift in Sources */,
+				259F5210A902B56ED61A00BF /* Functional.swift in Sources */,
+				EF96E213F9D5A4703E6F4D40 /* Match.swift in Sources */,
+				1830D18C5F50E8900C18DF38 /* MatcherFunc.swift in Sources */,
+				76B8819993294BCF3364CFC4 /* MatcherProtocols.swift in Sources */,
+				A722C390FCDEF5BE5A6D48E4 /* NMBExceptionCapture.m in Sources */,
+				3AF6A9F936A3D8625902D2CF /* NimbleXCTestHandler.swift in Sources */,
+				B769792A94A3E31DB3158558 /* ObjCExpectation.swift in Sources */,
+				861B1D0FC1AB4D00FD115BE5 /* ObjCMatcher.swift in Sources */,
+				ACD7D0D62FD65EC37AFEB41F /* Pods-RubyGensTests-Nimble-dummy.m in Sources */,
+				6681D94A521C0D5CD14738ED /* Poll.swift in Sources */,
+				8CB88067013E8A3CA11844CB /* RaisesException.swift in Sources */,
+				A082207C082195602A1BADB9 /* SourceLocation.swift in Sources */,
+				610892216518FC12B48B3179 /* Stringers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4968A76A7950A752ACE074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA2841566A5088965FA0671 /* Pods-RubyGensTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8835272DE04200267549C25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AF67DD122A400B3ED6D2BC /* GBCommandLineParser.m in Sources */,
+				BA08522EF73EF1F161F676F4 /* GBOptionsHelper.m in Sources */,
+				FC4A2F1B944E16471D5F43BD /* GBPrint.m in Sources */,
+				C1877B7C4DE85E9ECB4C6F38 /* GBSettings.m in Sources */,
+				497E79652FB257A357A33ABD /* Pods-GBCli-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC848887720A29F4170D538E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725B5B29F4A2CF18A6998533 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D212026AE9FA238A17C67F10 /* PBXTargetDependency */ = {
+		365B48666507546B6653E729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RubyGensTests-Nimble";
+			target = A1D0500BA20F0E08C72AF998 /* Pods-RubyGensTests-Nimble */;
+			targetProxy = D3EDA160C0EC1FA86985E3FD /* PBXContainerItemProxy */;
+		};
+		7D8431B142921DFDD8B4D576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GBCli";
-			target = 9B75EA2BB21A8A553FFFE7CE /* Pods-GBCli */;
-			targetProxy = 9ED3779B0014D2174B05A558 /* PBXContainerItemProxy */;
+			target = 58498DE46934DE550F979DCE /* Pods-GBCli */;
+			targetProxy = 3B5565B9C05330ED53E4A6D2 /* PBXContainerItemProxy */;
+		};
+		9E996A1B19B81CB779B19AF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RubyGensTests-Quick";
+			target = 18C277D2ACE05A3592100605 /* Pods-RubyGensTests-Quick */;
+			targetProxy = BF8347FDC353BDC49C22B551 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		29F3C90C8A4125D5178B00CC /* Release */ = {
+		274DD2F9FC5CBEF835DCD684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03B2FCB436A5A09C9693DE9 /* Pods-RubyGensTests-Quick-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RubyGensTests-Quick/Pods-RubyGensTests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RubyGensTests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-RubyGensTests-Quick/Pods-RubyGensTests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		348C20653C8EDDF805A6D4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C31EA766EBA4D5F92C20AC0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		590B1830A99C654E4FB928CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875C5F1EC290A4C39CCC3769 /* Pods-GBCli-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GBCli/Pods-GBCli-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5911E991059AA796947540ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03B2FCB436A5A09C9693DE9 /* Pods-RubyGensTests-Quick-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RubyGensTests-Quick/Pods-RubyGensTests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RubyGensTests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-RubyGensTests-Quick/Pods-RubyGensTests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5FEF23FA9E8288BB0AA2393F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,44 +960,9 @@
 			};
 			name = Release;
 		};
-		51A43DC1C50A8532C3718536 /* Release */ = {
+		647ACE141090019F07A4D910 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB87522C607377D86EA4971D /* Pods.release.xcconfig */;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		6E111C34659655D5AD5F2BE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C34AC87C02225B8FCA1457E3 /* Pods-GBCli-Private.xcconfig */;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-GBCli/Pods-GBCli-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		9CBF3C1A6FDD803FCAE84567 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C34AC87C02225B8FCA1457E3 /* Pods-GBCli-Private.xcconfig */;
+			baseConfigurationReference = 875C5F1EC290A4C39CCC3769 /* Pods-GBCli-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
@@ -388,7 +976,65 @@
 			};
 			name = Debug;
 		};
-		C699D1FBE7A5168C83474B9F /* Debug */ = {
+		8C14CF6F9B15EAA5CACFAB41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C006E5570F5BE806A6B4B85E /* Pods-RubyGensTests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RubyGensTests-Nimble/Pods-RubyGensTests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RubyGensTests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-RubyGensTests-Nimble/Pods-RubyGensTests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98732330360D61F8AED9171B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF0965638E9C56BC21C1C23 /* Pods-RubyGensTests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-RubyGensTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-RubyGensTests/Pods-RubyGensTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RubyGensTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A9CB2364527685C1AF6A74C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -427,14 +1073,15 @@
 			};
 			name = Debug;
 		};
-		E52ECE0F876ED283265C91AC /* Debug */ = {
+		D364C258315A9ECF50854426 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AA1007191BBDDCBC8278D71 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F1D608628FAF30922F9C9351 /* Pods.release.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -442,39 +1089,124 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
+			name = Release;
+		};
+		D4BBB544C39FCD7D6C71C2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C006E5570F5BE806A6B4B85E /* Pods-RubyGensTests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RubyGensTests-Nimble/Pods-RubyGensTests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RubyGensTests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-RubyGensTests-Nimble/Pods-RubyGensTests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6C937E77695581405A93D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9F94A30DA255C162A72AAF /* Pods-RubyGensTests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-RubyGensTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-RubyGensTests/Pods-RubyGensTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RubyGensTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE97190ADA37E534FC48514E /* Build configuration list for PBXProject "Pods" */ = {
+		51FC9823E9B557DD66C76AD7 /* Build configuration list for PBXNativeTarget "Pods-GBCli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C699D1FBE7A5168C83474B9F /* Debug */,
-				29F3C90C8A4125D5178B00CC /* Release */,
+				647ACE141090019F07A4D910 /* Debug */,
+				590B1830A99C654E4FB928CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA2A71ED24ED276C5D555E8C /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		5E2138FD21D2FD89C5C58B05 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E52ECE0F876ED283265C91AC /* Debug */,
-				51A43DC1C50A8532C3718536 /* Release */,
+				9A9CB2364527685C1AF6A74C /* Debug */,
+				5FEF23FA9E8288BB0AA2393F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8075048D215678A0018713C /* Build configuration list for PBXNativeTarget "Pods-GBCli" */ = {
+		867A50ACD3C84B7091AB6D7B /* Build configuration list for PBXNativeTarget "Pods-RubyGensTests-Quick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CBF3C1A6FDD803FCAE84567 /* Debug */,
-				6E111C34659655D5AD5F2BE2 /* Release */,
+				5911E991059AA796947540ED /* Debug */,
+				274DD2F9FC5CBEF835DCD684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CA35697B0F77DE94A55D0C /* Build configuration list for PBXNativeTarget "Pods-RubyGensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C937E77695581405A93D1C /* Debug */,
+				98732330360D61F8AED9171B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDCFC95E9A38CAEF941005ED /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348C20653C8EDDF805A6D4FB /* Debug */,
+				D364C258315A9ECF50854426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE23E1C3EC20311B84D79F58 /* Build configuration list for PBXNativeTarget "Pods-RubyGensTests-Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C14CF6F9B15EAA5CACFAB41 /* Debug */,
+				D4BBB544C39FCD7D6C71C2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ED97D456724855BB379A8274 /* Project object */;
+	rootObject = C32D49FC47E49169949446C9 /* Project object */;
 }

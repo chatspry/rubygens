@@ -1,8 +1,12 @@
 PODS:
   - GBCli (1.1)
+  - Nimble (2.0.0-rc.1)
+  - Quick (0.5.0)
 
 DEPENDENCIES:
   - GBCli (from `External/GBCli`)
+  - Nimble (= 2.0.0-rc.1)
+  - Quick (= 0.5.0)
 
 EXTERNAL SOURCES:
   GBCli:
@@ -10,5 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GBCli: e5f988fadb68e1e3c01919f134009fed9796fde0
+  Nimble: 9572458605e65c9fc5a56754ab19a970f6ab5a88
+  Quick: 45494d91b43b34346217879491853ee3ca073f5d
 
 COCOAPODS: 0.37.1
